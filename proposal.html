@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+
+<!--
+
+Grace Handler, Grace Punzalan, Maddie Bustamante
+Professor Congdon
+Project 1 Proposal
+Due: October 25, 2016
+
+-->
+
+<html>
+
+	<head>
+
+		<title>CS 3665: Project 1 Proposal</title>
+
+		<h1>CS 3665: Project 1 Proposal</h1>
+		<h3>Grace Handler, Grace Punzalan, Maddie Bustamante</h3>
+		<h4><i>Last Updated: 10/24/2016 @ 9:35pm</i></h4>
+		<h4><i>Description due: 10/25/2016 @ 10:00pm</i></h4>
+		<br>
+		***<br>
+		All three of us literally typed this up together, so the work was distributed equally, thus the breakdown is:<br>
+		Grace Handler: ~33.3%<br>
+		Grace Punzalan: ~33.3%<br>
+		Maddie Bustamante: ~33.4%<br>
+		We are working on creating a table now!<br>
+		***
+
+	</head>
+
+	<body>
+
+		<h2><u>Project 1 Description</u></h2>
+
+		According to the Machine Repository description of our dataset,
+		"This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011
+		for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts.
+		Many customers of the company are wholesalers."
+
+		<br>
+		<br>
+		We plan to look at the month of December and analyze trends in where purchases were made from, at what price, etc. in order
+		to better understand the demographic of consumers at the retail store.
+		We will depict relationships between the attributes and allow the user to choose what they view with interactivity and access
+		more information as they interact with our graphics.
+
+		</p>
+		<br>
+		<h2><u>Data Description</u></h2>
+		<p>
+			The name of our dataset is "Online Retail Data Set."
+			<a href="http://archive.ics.uci.edu/ml/datasets/Online+Retail#"> Here is the link to the source.</a>
+				<br>
+				<br>
+				There are 8 attributes. The attributes are: Invoice number , Stock code , Description, Quantity, invoice date, unit price, customer ID, and country.
+				<br><br>
+				Further description from the UCI website is pasted below:<br>
+				InvoiceNo: Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation. <br>
+StockCode: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product. <br>
+Description: Product (item) name. Nominal. <br>
+Quantity: The quantities of each product (item) per transaction. Numeric.	<br>
+InvoiceDate: Invice Date and time. Numeric, the day and time when each transaction was generated. <br>
+UnitPrice: Unit price. Numeric, Product price per unit in sterling. <br>
+CustomerID: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer. <br>
+Country: Country name. Nominal, the name of the country where each customer resides<br><br>
+			Here is an example of a subset of the data with column names:<br>
+			
+			InvoiceNo	StockCode	Description	Quantity	InvoiceDate	UnitPrice	CustomerID	Country<br>
+536365	85123A	WHITE HANGING HEART T-LIGHT HOLDER	6	12/1/10 8:26	2.55	17850	United Kingdom<br>
+536365	71053	WHITE METAL LANTERN	6	12/1/10 8:26	3.39	17850	United Kingdom<br>
+536365	84406B	CREAM CUPID HEARTS COAT HANGER	8	12/1/10 8:26	2.75	17850	United Kingdom
+		</p>
+		<br>
+		<h2><u>Attributes We Will Work With</u></h2>
+		<p>
+			The attributes we will use include: description, quantity, invoice date, unit price and country.
+		</p>
+		<br>
+		<h2><u>List of Questions</u></h2>
+		<p>
+			1) Which countries do the most online shopping in December?
+			<br>
+			2) Is the country that has made the most purchases consistenly the one with the most online shopping?
+			<br>
+			3) What month is the most popular for online shopping per country?
+			<br>
+			4) What month is the most popular for onling shopping overall?
+			<br>
+			5) What is the average unit price per day for online shopping?
+			<br>
+			6) What is the average unit prie per country for online shopping?
+			<br>
+			7) Which country bought the most items in December?
+			<br>
+			8) Is there a correlation between total money spent (sum of unit prices) and population of the country?
+			<br>
+			9) Is there a correlation between total money spent (sum of unit prices) and number of items bought (sum of quantities)?
+			<br>
+			10) What is the most popular item name per country?
+		</p>
+		<br>
+		<h2><u>Sketch Of Interface</u></h2>
+		<p>
+		  <img src="projectPic.png"/>
+		</p>
+		<br>
+		<h2><u>List of Interactions</u></h2>
+		<p>
+			We will have a line chart with y-axis as days of December and x-axis as either sum of unit prices or sum of quantities, depending on what the user checks. The user can only check one of these at a time.
+			We will also have a bubble chart, where each bubble will represent that most commonly bought item for a country, and its sized will be based on what that quantity was.
+			<br>
+			<br>
+			<i>For the line graph,</i> the user can hover over a line to show which country that line represents and see the associated number for that point in the data set. The user can click a line to bold that line, then click again to unbold.
+			Multiple lines can be clicked at one so as to make it clearer to compare. The user can also check "sum of unit prices" or "sum of quantities" (only one at a time) to change what the x-axis shows and the chart will adjust and update accordingly.
+			<br>
+			<br>
+			<i>For the bubble chart,</i> <!--the user can hover
+			over a bubble and a tooltip will show the country, the
+			item, and how many occurences it had.--> we will have a check box for top 5 most bought items. Once the user clicks on one of these items, circles representing countries will be drawn, where the radius varies depending on how many of that item was bought the given country. 
+
+
+
+		</p>
+		<br>
+		<h2><u>Our Two D3 Layouts</u></h2>
+		<p>
+			We will have a line chart and a bubble chart.
+		</p>
+		<br>
+		<h2><u>A New D3 Concept</u></h2>
+		<p>
+			The new concepts we will use for the line chart are: concept of a line graph.
+			We will reference this site: http://bl.ocks.org/benjchristensen/2657838
+			<br>
+			<br>
+			The new concepts we will use for the bubble chart are: concept of a hierarchy, concept of a node.
+			We will reference this site: http://bl.ocks.org/mbostock/4063269
+		</p>
+		<br>
+		<h2><u>Implementation Path</u></h2>
+		<p>
+			First, we will clean up the data so that it only includes the month of December and the relevant attributes as mentioned above. Then, we will read in the data so it is in a usable dataset format like we had for previous assignments.
+			Then, we will work on creating one stable line chart with "sum of unit prices," then add the functionality to swtitch to "sum of quantities." At that point, we can add the hover and click functionalities. Then, we will begin to implement
+			the bubble chart using the aforementioned source. First, we will implement it as a stable bubble chart. Then we will add tooltips. Then, if we have time, we can make it so the bubbles get bigger when you hover over them.
+		</p>
+
+	</body>
+
+</html>

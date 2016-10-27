@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Project 1: Line Graph Template </title>
+        <script type="text/javascript" src="d3.v3.js"></script>
+
+	<style type="text/css">
+	 
+	  .axis path,
+	  .axis line {
+	      fill: none;
+	      stroke: black;
+	      shape-rendering: crispEdges;
+	  }
+
+	  .axis text {
+	      font-family: sans-serif;
+	      font-size: 11px;
+	  }
+	</style>
+
+
+    </head>
+
+    <body>
+    
+      <script type = "text/javascript">
+
+      var dataset = [3, 6, 2, 7, 5, 2, 0, 3, 8, 9, 2, 5, 9, 3, 6, 3, 6];
+      var dataset2 = [0, 1, 2, 3, 5, 6, 9, 8, 8, 5, 3, 2, 1, 0];
+      
+      
+      var w = 700;
+      var h = 700;
+
+      var space = d3.select("body")
+                  .append("svg")
+                  .attr("width",w)
+                  .attr("height",w);
+      
+      //x scale: putting all the values from the dataset in the svg within w 
+      var xScale = d3.scale.linear()
+         .domain([0, dataset.length])
+         .range([20,w-20]);
+      //y-scale: makes sure that the highes value in the set fits in svg h
+      var yScale = d3.scale.linear()
+         .domain([0, d3.max(dataset)])
+         .range([h - 20, 20]);
+
+      //line
+      var line = d3.svg.line()
+          .x(function(d,i){
+              //return x coordinate where we want to graph
+              //uses the index for now
+              return xScale(i);
+          })
+          .y(function(d){ return yScale(d); 
+          });
+
+
+      //creating X axis
+      var xAxis = d3.svg.axis()
+           .scale(xScale)
+           .orient("bottom");
+
+     space.append("g").attr("class", "axis")
+	   .attr("transform", "translate(0, " + (h- 20) + ") " )
+	   .call(xAxis);
+
+      var yAxis = d3.svg.axis()
+           .scale(yScale)
+           .orient("left");
+
+     space.append("g").attr("class", "axis")
+	   .attr("transform", "translate(20,0)" )
+	   .call(yAxis);
+
+      //x-axis title
+      space.append("text")
+          .text("December")
+	  .attr("x", 680)
+	  .attr("y",670)
+	  .attr("text-anchor", "end");
+	
+	//y-axis title
+      space.append("text")
+	  .text(" sum of unit price ($) ")
+	  .attr("x",30)
+	  .attr("y", 20)
+	  .attr("text-anchor", "start")
+	  .attr("style", "writing-mode: tb; glyph-orientation-vertical:1");
+	//changes the orientation of the text
+
+
+
+      //create the 2 lines
+      //USING DATASET
+      space.append("path").attr("d",line(dataset))
+           .attr("stroke", "green")
+           .attr("stroke-width", 2)
+           .attr("fill", "none")
+           .on("click", function(){
+                           //make line thicker
+                           d3.select(this).attr("stroke", "black")
+                                          .attr("stroke-width", 5)
+
+                           ;});
+      //USING DATASET2
+      space.append("path").attr("d",line(dataset2))
+           .attr("stroke", "blue")
+           .attr("stroke-width", 2)
+           .attr("fill", "none")
+           .on("click", function(){
+                           //make line thicker
+                           d3.select(this).attr("stroke", "black")
+                                          .attr("stroke-width", 5)
+
+                           ;});
+          
+      //////////////////////////////////////////////////////////////////
+      /* To create multiple lines, do for loops, depending on how many
+      countries you have
+
+      Give each path a color ID, so that when you unbold it, you can just
+      compare colors. 
+      ex. (AFTER CLICK)
+          TO BOLD: If stroke width is 2, color it black for emphasis 
+          TO UN-BOLD: If stroke width is 5, return old color using id
+
+      */
+            
+
+      </script>
+
+    </body>
+</html>

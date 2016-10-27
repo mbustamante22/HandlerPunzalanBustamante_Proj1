@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+	/* set the CSS */
+
+	.line {
+		fill: none;
+		stroke: steelblue;
+		stroke-width: 2px;
+	}
+
+</style>
+<body>
+
+	<!-- load the d3.js library -->
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script>
+		var dataset = [];
+		var uniqueCountries = {};
+		var countries = [];
+
+		var uniqueDays = {};
+		var days = [];
+
+		var countryData = [];
+		//object per country with total unit price and total quantity
+
+		var uniqueItems = {};
+		var max = 0;
+		var items = [];
+		var topItems = [];
+		var topFiveItems = [];
+
+		// Get the data
+		d3.csv("project1_data.csv", function(error, data) {
+			dataset = data;
+
+			if (error) {
+				console.log("Error loading data. \n");
+				throw error;
+			}
+
+			/*
+			* DATA PARSING:
+			*
+			* For the line graph, we need:
+			* Per country per day, sum of unit prices for December
+			* Per country per day, sum of quantities for December
+			*
+			* For the bubble graph, we need:
+			* Top 5 most commonly bought items
+			* 		For each: how much did each country buy?
+			*
+			*/
+
+			// REFERENCED: http://stackoverflow.com/questions/15125920/how-to-get-distinct-values-from-an-array-of-objects-in-javascript
+			counter = 0;
+			dataset.forEach(function(x) {
+
+				if (x.UnitPrice * 1 < 0) {
+					x.UnitPrice = x.UnitPrice * -1;
+				}
+				if (x.Quantity * 1 < 0) {
+					x.Quantity = x.Quantity * -1;
+				}
+
+				if (!uniqueCountries[x.Country]) {
+					countryData.push({
+						country : x.Country, //0
+						unitPrice : (x.UnitPrice * 1), //1
+						quantity : (x.Quantity * 1), //2
+						itemCount : []
+					});
+					//countries.push(x.Country);
+					// push that country
+					uniqueCountries[x.Country] = true;
+					// it's been found
+				} else {
+					for (var i = 0; i < countryData.length; i++) {
+						if (x.Country == countryData[i].country) {
+							countryData[i].unitPrice = countryData[i].unitPrice * 1 + x.UnitPrice * 1;
+							countryData[i].quantity = countryData[i].quantity * 1 + x.Quantity * 1;
+						}
+					}
+				}
+
+				if (!uniqueItems[x.Description]) {
+					items.push({
+						name : x.Description,
+						occurences : 1,
+						countriesWith : []
+					});
+					items[counter].countriesWith.push(x.Country);
+					uniqueItems[x.Description] = true;
+				} else {
+					for (var i = 0; i < items.length; i++) {
+						if (x.Description === items[i].name) {
+							items[i].countriesWith.push(items[i].Country);
+							items[i].occurences = (items[i].occurences * 1) + 1;
+						}
+					}
+				}
+
+			});
+
+			topItems = items.sort(function(a, b) {
+				return a.occurences * 1 > b.occurences * 1;
+			});
+
+			for (var i = 0; i < 5; i++) {
+				topFiveItems.push(topItems[i]);
+			}
+
+			
+			var tempCounter = 0;
+
+			console.log(topFiveItems);
+
+			topFiveItems.forEach(function(x) {
+				for (var j = 0; j < x.countriesWith.length; j++) {
+					var uniqueCountryItem = {};
+					if (!uniqueCountryItem[x.countriesWith[i]]) {
+							countryData[x.countriesWith[i]].itemCount[tempCounter] = 1;
+							uniqueCountryItem[x.countriesWith[i]] = true;
+					} else {
+							for (var i = 0; i < countryData.length; i++) {
+								if (x.countriesWith[i] === countryData[x.countriesWith[i]].country) {
+									 z.itemCount[tempCounter] = 100;
+								}
+							}
+					}
+				}
+				tempCounter = (tempCounter * 1) + 1;
+			});
+
+			counter = (counter * 1) + 1;
+
+			console.log(items);
+
+		});
+
+	</script>
+</body>

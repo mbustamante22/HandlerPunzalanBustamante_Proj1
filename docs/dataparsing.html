@@ -16,11 +16,9 @@
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script>
 		var dataset = [];
+
 		var uniqueCountries = {};
 		var countries = [];
-
-		var uniqueDays = {};
-		var days = [];
 
 		var countryData = [];
 		//object per country with total unit price and total quantity
@@ -40,11 +38,39 @@
 				throw error;
 			}
 
+			dataset.forEach(function(x) {
+				if (!uniqueItems[x.Description]) {
+					items.push({
+						name : x.Description,
+						occurences : 1,
+						countriesWith : []
+					});
+					//items[counter].countriesWith.push(x.Country);
+					uniqueItems[x.Description] = true;
+				} else {
+					for (var i = 0; i < items.length; i++) {
+						if (x.Description === items[i].name) {
+							//items[i].countriesWith.push(items[i].Country);
+							items[i].occurences = (items[i].occurences * 1) + 1;
+						}
+					}
+				}
+			});
+			
+			topItems = items.sort(function(a, b) {
+				return a.occurences * 1 < b.occurences * 1;
+			});
+
+			for (var i = 0; i < 5; i++) {
+				topFiveItems.push(topItems[i]);
+			}
+
 			/* Dataset is sorted by date as given in UCI data */
 
-			var dayCount = 0;
-			var itemCount = 0;
 			dataset.forEach(function(x) {
+
+				/* Deals with weird bug of neg numbers */
+
 				if (x.UnitPrice * 1 < 0) {
 					x.UnitPrice = x.UnitPrice * -1;
 				}
@@ -88,7 +114,7 @@
 							break;
 						}
 					}
-					
+
 					if (!countryData[i].uniqueDays[x.InvoiceDate]) {
 						countryData[i].perDayData.push({
 							date : x.InvoiceDate,
@@ -105,9 +131,10 @@
 								//countryData[i].uniqueDays[y] = true;
 								break;
 							}
-	
+
 						}
 					}
+
 					if (!countryData[i].uniqueItems[x.Description]) {
 						countryData[i].perItemData.push({
 							itemName : x.Description,
@@ -124,9 +151,17 @@
 					}
 
 				}
-
 			});
-
+			
+			for (var i = 0; i < countryData.length; i++) {
+				var tempArray = [];
+				tempArray = countryData[i].perItemData.sort(function(a,b) {
+					return a.itemOccurences * 1 < b.itemOccurences * 1;
+				});
+				countryData[i].perItemData = [];
+				countryData[i].perItemData = tempArray;
+			}
+			
 			console.log(countryData);
 
 		});

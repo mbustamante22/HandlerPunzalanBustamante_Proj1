@@ -40,23 +40,11 @@
 				throw error;
 			}
 
-			/*
-			* DATA PARSING:
-			*
-			* For the line graph, we need:
-			* Per country per day, sum of unit prices for December
-			* Per country per day, sum of quantities for December
-			*
-			* For the bubble graph, we need:
-			* Top 5 most commonly bought items
-			* 		For each: how much did each country buy?
-			*
-			*/
+			/* Dataset is sorted by date as given in UCI data */
 
-			// REFERENCED: http://stackoverflow.com/questions/15125920/how-to-get-distinct-values-from-an-array-of-objects-in-javascript
-			counter = 0;
+			var dayCount = 0;
+			var itemCount = 0;
 			dataset.forEach(function(x) {
-
 				if (x.UnitPrice * 1 < 0) {
 					x.UnitPrice = x.UnitPrice * -1;
 				}
@@ -65,77 +53,81 @@
 				}
 
 				if (!uniqueCountries[x.Country]) {
+					var tempDayData = [];
+					tempDayData.push({
+						date : x.InvoiceDate,
+						sumUnitPrices : (x.UnitPrice * 1),
+						sumQuantities : (x.Quantity * 1)
+					});
+					var tempItemData = [];
+					tempItemData.push({
+						itemName : x.Description,
+						itemOccurences : 1
+					});
+					var tempUniqueDays = {};
+					tempUniqueDays[x.InvoiceDate] = true;
+					var tempUniqueItems = {};
+					tempUniqueItems[x.Description] = true;
+
 					countryData.push({
-						country : x.Country, //0
-						unitPrice : (x.UnitPrice * 1), //1
-						quantity : (x.Quantity * 1), //2
-						itemCount : []
+						country : x.Country,
+						perDayData : tempDayData,
+						perItemData : tempItemData,
+						uniqueDays : tempUniqueDays,
+						uniqueItems : tempUniqueItems
 					});
-					//countries.push(x.Country);
-					// push that country
+
 					uniqueCountries[x.Country] = true;
-					// it's been found
 				} else {
-					for (var i = 0; i < countryData.length; i++) {
-						if (x.Country == countryData[i].country) {
-							countryData[i].unitPrice = countryData[i].unitPrice * 1 + x.UnitPrice * 1;
-							countryData[i].quantity = countryData[i].quantity * 1 + x.Quantity * 1;
+
+					var countryDataLength = countryData.length;
+					var i = 0;
+					for (var z = 0; z < countryDataLength; z++) {
+						if (countryData[z].country == x.Country) {
+							i = z;
+							break;
 						}
 					}
-				}
+					
+					if (!countryData[i].uniqueDays[x.InvoiceDate]) {
+						countryData[i].perDayData.push({
+							date : x.InvoiceDate,
+							sumUnitPrices : (x.UnitPrice * 1),
+							sumQuantities : (x.Quantity * 1)
+						});
+						countryData[i].uniqueDays[x.InvoiceDate] = true;
 
-				if (!uniqueItems[x.Description]) {
-					items.push({
-						name : x.Description,
-						occurences : 1,
-						countriesWith : []
-					});
-					items[counter].countriesWith.push(x.Country);
-					uniqueItems[x.Description] = true;
-				} else {
-					for (var i = 0; i < items.length; i++) {
-						if (x.Description === items[i].name) {
-							items[i].countriesWith.push(items[i].Country);
-							items[i].occurences = (items[i].occurences * 1) + 1;
-						}
-					}
-				}
-
-			});
-
-			topItems = items.sort(function(a, b) {
-				return a.occurences * 1 > b.occurences * 1;
-			});
-
-			for (var i = 0; i < 5; i++) {
-				topFiveItems.push(topItems[i]);
-			}
-
-			
-			var tempCounter = 0;
-
-			console.log(topFiveItems);
-
-			topFiveItems.forEach(function(x) {
-				for (var j = 0; j < x.countriesWith.length; j++) {
-					var uniqueCountryItem = {};
-					if (!uniqueCountryItem[x.countriesWith[i]]) {
-							countryData[x.countriesWith[i]].itemCount[tempCounter] = 1;
-							uniqueCountryItem[x.countriesWith[i]] = true;
 					} else {
-							for (var i = 0; i < countryData.length; i++) {
-								if (x.countriesWith[i] === countryData[x.countriesWith[i]].country) {
-									 z.itemCount[tempCounter] = 100;
-								}
+						for (var y = 0; y < countryData[i].perDayData.length; y++) {
+							if (countryData[i].perDayData[y].date === x.InvoiceDate) {
+								countryData[i].perDayData[y].sumUnitPrices = (countryData[i].perDayData[y].sumUnitPrices * 1) + 1;
+								countryData[i].perDayData[y].sumQuantities = (countryData[i].perDayData[y].sumQuantities * 1) + 1;
+								//countryData[i].uniqueDays[y] = true;
+								break;
 							}
+	
+						}
 					}
+					if (!countryData[i].uniqueItems[x.Description]) {
+						countryData[i].perItemData.push({
+							itemName : x.Description,
+							itemOccurences : 1
+						});
+						countryData[i].uniqueItems[x.Description] = true;
+					} else {
+						for (var y = 0; y < countryData[i].perItemData.length; y++) {
+							if (countryData[i].perItemData[y].itemName === x.Description) {
+								countryData[i].perItemData[y].itemOccurences = (countryData[i].perItemData[y].itemOccurences * 1) + 1;
+								break;
+							}
+						}
+					}
+
 				}
-				tempCounter = (tempCounter * 1) + 1;
+
 			});
 
-			counter = (counter * 1) + 1;
-
-			console.log(items);
+			console.log(countryData);
 
 		});
 

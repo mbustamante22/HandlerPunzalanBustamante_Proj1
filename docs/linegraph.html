@@ -8,6 +8,7 @@
 
 	<style type="text/css">
 	 
+
 	  .axis path,
 	  .axis line {
 	      fill: none;
@@ -17,37 +18,57 @@
 
 	  .axis text {
 	      font-family: sans-serif;
-	      font-size: 11px;
+	      font-size: 15px;
+	  }
+
+	  #tooltip.hidden{
+	     display:none;
+	  }
+	  .rectangle {
+	     fill: none;
+	     pointer-events: all;
 	  }
 	</style>
 
 
     </head>
 
+
     <body>
+      <h1 style= "font-family: Verdana"> PROJECT 1: LINE GRAPH </h1>
     
       <script type = "text/javascript">
 
-      var dataset = [3, 6, 2, 7, 5, 2, 0, 3, 8, 9, 2, 5, 9, 3, 6, 3, 6];
-      var dataset2 = [0, 1, 2, 3, 5, 6, 9, 8, 8, 5, 3, 2, 1, 0];
-      
-      
-      var w = 700;
-      var h = 700;
+
+ 
+      var dataset = [0,0,0,0,0];
+      var dataset2 = [1,20,30,4,5];
+      for( var i = 0; i < 10; i++){
+		dataset.push(Math.round(Math.random() * 15))
+		dataset2.push(Math.round(Math.random() * 25))
+			  }
+      var color = ["green", "teal"];
+      var w = 1000;
+      var h = 500;
+
+      var information = d3.select("body")
+                  .append("svg")
+                  .attr("width",w)
+                  .attr("height", 50);
 
       var space = d3.select("body")
                   .append("svg")
-                  .attr("width",w)
-                  .attr("height",w);
+                  .attr("width",w )
+                  .attr("height",h);
       
       //x scale: putting all the values from the dataset in the svg within w 
       var xScale = d3.scale.linear()
          .domain([0, dataset.length])
-         .range([20,w-20]);
+         .range([50,w-50]);
       //y-scale: makes sure that the highes value in the set fits in svg h
       var yScale = d3.scale.linear()
-         .domain([0, d3.max(dataset)])
-         .range([h - 20, 20]);
+         .domain([0, /*d3.max(dataset)*/30])
+         .range([h - 50, 30]);
 
       //line
       var line = d3.svg.line()
@@ -60,64 +81,120 @@
           });
 
 
+
       //creating X axis
-      var xAxis = d3.svg.axis()
+      function xAxis() {
+           return  d3.svg.axis()
            .scale(xScale)
-           .orient("bottom");
+           .orient("bottom")
+           .ticks(5)
+      }
 
      space.append("g").attr("class", "axis")
-	   .attr("transform", "translate(0, " + (h- 20) + ") " )
-	   .call(xAxis);
+	   .attr("transform", "translate(0, " + (h- 50) + ") " )
+	   .call(xAxis());
 
+
+      //creating the Y axis
       var yAxis = d3.svg.axis()
            .scale(yScale)
            .orient("left");
 
      space.append("g").attr("class", "axis")
-	   .attr("transform", "translate(20,0)" )
+	   .attr("transform", "translate(50,0)" )
 	   .call(yAxis);
 
       //x-axis title
       space.append("text")
           .text("December")
-	  .attr("x", 680)
-	  .attr("y",670)
+	  .attr("x",w/2 + 50)
+	  .attr("y",h - 10)
 	  .attr("text-anchor", "end");
 	
 	//y-axis title
       space.append("text")
 	  .text(" sum of unit price ($) ")
-	  .attr("x",30)
-	  .attr("y", 20)
+	  .attr("x",10)
+	  .attr("y", h/2 - 50)
 	  .attr("text-anchor", "start")
 	  .attr("style", "writing-mode: tb; glyph-orientation-vertical:1");
-	//changes the orientation of the text
+          //changes the orientation of the text
 
+      /////////////////////////////////////////////////////////////////////////
 
-
-      //create the 2 lines
+       space.append("rect")
+      .attr("class", "rectangle")
+      .attr("width", w)
+      .attr("height",h)
+      .on("mouseover", function() {indicator.style("display", null);})
+      .on("mouseout", function() {indicator.style("display", "none");})
+      .on("mousemove", update); 
+      
       //USING DATASET
+
+      drawLine(dataset);
+      drawLine(dataset2);			  
+      function drawLine(dataset) {
+      var bool = true;
       space.append("path").attr("d",line(dataset))
-           .attr("stroke", "green")
-           .attr("stroke-width", 2)
+           .attr("stroke", color[dataset[0]])
+           .attr("stroke-width", 1.5)
            .attr("fill", "none")
            .on("click", function(){
+			   if(bool){
                            //make line thicker
-                           d3.select(this).attr("stroke", "black")
+                           d3.select(this).attr("stroke", color[dataset[0]])
                                           .attr("stroke-width", 5)
+			   bool = false;
+			   }
+			   else{
+			   d3.select(this).remove();
+			   drawLine(dataset)
+			   }
 
                            ;});
-      //USING DATASET2
-      space.append("path").attr("d",line(dataset2))
-           .attr("stroke", "blue")
-           .attr("stroke-width", 2)
-           .attr("fill", "none")
-           .on("click", function(){
-                           //make line thicker
-                           d3.select(this).attr("stroke", "black")
-                                          .attr("stroke-width", 5)
 
-                           ;});
+      }			  
+
+ var indicator = space.append("rect")
+            .attr("width", .1)
+            .attr("height", h - 80)
+	    .style("display", "none")
+            .style("pointer-events", "none")
+            .style("stroke", "black")
+            .style("fill", "red")
+            .style("stroke-width", "1px");
+
+
+      function update(){
+         var mouse = d3.mouse(this);
+         indicator.attr("x", mouse[0]);        
+         indicator.attr("y", 30); 
+  
+	 var index = Math.round(xScale.invert(mouse[0]));
+
+	 //alert("dataset1: " +dataset[index]+ ", dataset2:" + dataset2[index]);
+	 //NOTE: Alert works, Just need to show it on the bottom of the x axis
+      
+
+
+      
+      information.append("rect")
+      .attr("x", 50)
+      .attr("width", w - 50 - 50  )
+      .attr("height", 45)
+      .style("fill", "white");
+      
+      information.append("text")
+      .attr("x", 60)
+      .attr("y", 15)
+      .style("color", "black")
+      .style("font-family", "Verdana")
+      .text("dataset_1 value : " + dataset[index] + ", dataset_2 value: " +dataset2[index]);
+
+      }
+
+      
           
       //////////////////////////////////////////////////////////////////
       /* To create multiple lines, do for loops, depending on how many
@@ -129,10 +206,21 @@
           TO BOLD: If stroke width is 2, color it black for emphasis 
           TO UN-BOLD: If stroke width is 5, return old color using id
 
+      TO DO: SHOW THE INFORMATION AT THE TOP OF THE GRAPH
+
       */
-            
+
+			  
+
+      ////////////////
+
+
+
+
+           
 
       </script>
 
     </body>
+
 </html>

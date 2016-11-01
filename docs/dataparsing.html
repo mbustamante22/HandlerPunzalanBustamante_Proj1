@@ -56,7 +56,7 @@
 					}
 				}
 			});
-			
+
 			topItems = items.sort(function(a, b) {
 				return a.occurences * 1 < b.occurences * 1;
 			});
@@ -64,6 +64,8 @@
 			for (var i = 0; i < 5; i++) {
 				topFiveItems.push(topItems[i]);
 			}
+
+			console.log(topFiveItems);
 
 			/* Dataset is sorted by date as given in UCI data */
 
@@ -152,18 +154,29 @@
 
 				}
 			});
-			
+
 			for (var i = 0; i < countryData.length; i++) {
 				var tempArray = [];
-				tempArray = countryData[i].perItemData.sort(function(a,b) {
-					return a.itemOccurences * 1 < b.itemOccurences * 1;
+				tempArray = countryData[i].perItemData.sort(function(a, b) {
+					return a.itemOccurences * 1 > b.itemOccurences * 1;
 				});
 				countryData[i].perItemData = [];
 				countryData[i].perItemData = tempArray;
 			}
-			
-			console.log(countryData);
 
+			for (var i = 0; i < countryData.length; i++) {
+				countryData[i].uniqueItems = [];
+				countryData[i].uniqueDays = [];
+				for (var j = 0; j < countryData[i].perItemData.length; j++) {
+
+					tempArray = [];
+					for (var k = 0; k < 15; k++) {
+						tempArray.push(countryData[i].perItemData[j]);
+					}
+				}
+				countryData[i].perItemData = tempArray;
+			}
+			console.log(JSON.stringify(countryData));
 		});
 
 	</script>

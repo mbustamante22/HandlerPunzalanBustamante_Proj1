@@ -726,23 +726,17 @@
 			function drawLine(perDayData, index) {
 				var bool = true;
 				//tracks whether the line is bolded or not
-				space.append("path")
-				.attr("d", line(perDayData))
-				.attr("id", data[index].country)
-				.attr("stroke", makeColor())
-				.attr("stroke-width", 1.5)
-				.attr("fill", "none")
-				.on("click", function() {
+				space.append("path").attr("d", line(perDayData)).attr("id", data[index].country).attr("stroke", makeColor()).attr("stroke-width", 1.5).attr("fill", "none").on("click", function() {
 					//if (bool) {
-						console.log(d3.select(this));
-						//make line thicker
-						d3.select(this).attr("stroke", "black").attr("stroke-width", 6)
-						//alert(d3.select(this).attr("id"));
-						bool = false;
+					console.log(d3.select(this));
+					//make line thicker
+					d3.select(this).attr("stroke", "black").attr("stroke-width", 6)
+					//alert(d3.select(this).attr("id"));
+					bool = false;
 					//} else {
-						//remove and redraw the original line
-						//d3.select(this).remove();
-						//drawLine(perDayData, index)
+					//remove and redraw the original line
+					//d3.select(this).remove();
+					//drawLine(perDayData, index)
 					//}
 
 					;
@@ -780,11 +774,9 @@
 					for (var a = 0; a < data.length; a++) {
 						for (var b = 0; b < data[i].perDayData.length; b++) {
 							if (data[a].perDayData[b].date) {
-															var date = data[a].perDayData[b].date.split("/");
-															console.log(date);
+								var date = data[a].perDayData[b].date.split("/");
+								console.log(date);
 							}
-
-
 
 						}
 					}

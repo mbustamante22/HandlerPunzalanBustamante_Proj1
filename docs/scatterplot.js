@@ -669,7 +669,7 @@ svg.selectAll("circle").data(dataset).enter().append("circle").attr("cx", functi
 	return yScale(d.fullSumUnitPrices);
 }).attr("r", function(d, i) {
 	return rScale(d.fullSumQuantities / 50);
-}).style("fill", "white").style("stroke", "black").on("mouseover", function(d) { // When you mouseover a dot, show tooltip with information
+}).style("fill", "white").style("stroke", "black").on("mouseover", function(d) {// When you mouseover a dot, show tooltip with information
 	div.transition().duration(200).style("opacity", .9);
 	div.html("Country: " + d.country + "</br>Full Sum Unit Prices: $" + d.fullSumUnitPrices + "</br>Full Sum Quantities: " + d.fullSumQuantities)
 

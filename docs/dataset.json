@@ -1,1653 +1,696 @@
-[{
-	"country" : "United Kingdom",
-	"perDayData" : [{
-		"date" : "12/1/10",
-		"sumUnitPrices" : 2950.55,
-		"sumQuantities" : 2954
-	}, {
-		"date" : "12/2/10",
-		"sumUnitPrices" : 2094.25,
-		"sumQuantities" : 2105
-	}, {
-		"date" : "12/3/10",
-		"sumUnitPrices" : 2010.42,
-		"sumQuantities" : 2058
-	}, {
-		"date" : "12/5/10",
-		"sumUnitPrices" : 2495.95,
-		"sumQuantities" : 2500
-	}, {
-		"date" : "12/6/10",
-		"sumUnitPrices" : 3820.95,
-		"sumQuantities" : 3824
-	}, {
-		"date" : "12/7/10",
-		"sumUnitPrices" : 2858.95,
-		"sumQuantities" : 2861
-	}, {
-		"date" : "12/8/10",
-		"sumUnitPrices" : 2493.55,
-		"sumQuantities" : 2619
-	}, {
-		"date" : "12/9/10",
-		"sumUnitPrices" : 2637.95,
-		"sumQuantities" : 2646
-	}, {
-		"date" : "12/10/10",
-		"sumUnitPrices" : 2629.25,
-		"sumQuantities" : 2640
-	}, {
-		"date" : "12/12/10",
-		"sumUnitPrices" : 1403.65,
-		"sumQuantities" : 1410
-	}, {
-		"date" : "12/13/10",
-		"sumUnitPrices" : 2261.95,
-		"sumQuantities" : 2259
-	}, {
-		"date" : "12/14/10",
-		"sumUnitPrices" : 2006.75,
-		"sumQuantities" : 1995
-	}, {
-		"date" : "12/15/10",
-		"sumUnitPrices" : 1273.25,
-		"sumQuantities" : 1284
-	}, {
-		"date" : "12/16/10",
-		"sumUnitPrices" : 1752.65,
-		"sumQuantities" : 1761
-	}, {
-		"date" : "12/17/10",
-		"sumUnitPrices" : 2819.95,
-		"sumQuantities" : 2818
-	}, {
-		"date" : "12/19/10",
-		"sumUnitPrices" : 488.95,
-		"sumQuantities" : 480
-	}, {
-		"date" : "12/20/10",
-		"sumUnitPrices" : 1592.85,
-		"sumQuantities" : 1604
-	}, {
-		"date" : "12/21/10",
-		"sumUnitPrices" : 1467.95,
-		"sumQuantities" : 1471
-	}, {
-		"date" : "12/22/10",
-		"sumUnitPrices" : 250.95,
-		"sumQuantities" : 257
-	}, {
-		"date" : "12/23/10",
-		"sumUnitPrices" : 872.45,
-		"sumQuantities" : 908
-	}],
-	"perItemData" : [{
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}, {
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}, {
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}, {
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}, {
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}, {
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}, {
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}, {
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}, {
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}, {
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}, {
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}, {
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}, {
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}, {
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}, {
-		"itemName" : "WHITE HANGING HEART T-LIGHT HOLDER",
-		"itemOccurences" : 235
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "France",
-	"perDayData" : [{
-		"date" : "12/1/10",
-		"sumUnitPrices" : 22.75,
-		"sumQuantities" : 43
-	}, {
-		"date" : "12/3/10",
-		"sumUnitPrices" : 23.45,
-		"sumQuantities" : 34
-	}, {
-		"date" : "12/5/10",
-		"sumUnitPrices" : 66.65,
-		"sumQuantities" : 70
-	}, {
-		"date" : "12/7/10",
-		"sumUnitPrices" : 61.45,
-		"sumQuantities" : 72
-	}, {
-		"date" : "12/8/10",
-		"sumUnitPrices" : 10.42,
-		"sumQuantities" : 35
-	}, {
-		"date" : "12/9/10",
-		"sumUnitPrices" : 95.35,
-		"sumQuantities" : 93
-	}, {
-		"date" : "12/10/10",
-		"sumUnitPrices" : 33,
-		"sumQuantities" : 23
-	}, {
-		"date" : "12/15/10",
-		"sumUnitPrices" : 67.25,
-		"sumQuantities" : 67
-	}, {
-		"date" : "12/16/10",
-		"sumUnitPrices" : 3.65,
-		"sumQuantities" : 5
-	}, {
-		"date" : "12/17/10",
-		"sumUnitPrices" : 10.19,
-		"sumQuantities" : 202
-	}, {
-		"date" : "12/20/10",
-		"sumUnitPrices" : 62.65,
-		"sumQuantities" : 73
-	}, {
-		"date" : "12/21/10",
-		"sumUnitPrices" : 154,
-		"sumQuantities" : 5
-	}, {
-		"date" : "12/22/10",
-		"sumUnitPrices" : 3.42,
-		"sumQuantities" : 23
-	}],
-	"perItemData" : [{
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 17
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Australia",
-	"perDayData" : [{
-		"date" : "12/1/10",
-		"sumUnitPrices" : 21.5,
-		"sumQuantities" : 19
-	}, {
-		"date" : "12/8/10",
-		"sumUnitPrices" : 8.25,
-		"sumQuantities" : 31
-	}, {
-		"date" : "12/14/10",
-		"sumUnitPrices" : 3.65,
-		"sumQuantities" : 9
-	}, {
-		"date" : "12/17/10",
-		"sumUnitPrices" : 15.75,
-		"sumQuantities" : 19
-	}],
-	"perItemData" : [{
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "DOORMAT UNION FLAG",
-		"itemOccurences" : 2
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Netherlands",
-	"perDayData" : [{
-		"date" : "12/1/10",
-		"sumUnitPrices" : 2.85,
-		"sumQuantities" : 97
-	}, {
-		"date" : "12/20/10",
-		"sumUnitPrices" : 15.29,
-		"sumQuantities" : 27
-	}, {
-		"date" : "12/21/10",
-		"sumUnitPrices" : 53.42,
-		"sumQuantities" : 293
-	}],
-	"perItemData" : [{
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "CHARLOTTE BAG SUKI DESIGN",
-		"itemOccurences" : 2
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Germany",
-	"perDayData" : [{
-		"date" : "12/1/10",
-		"sumUnitPrices" : 30.95,
-		"sumQuantities" : 34
-	}, {
-		"date" : "12/2/10",
-		"sumUnitPrices" : 19.5,
-		"sumQuantities" : 13
-	}, {
-		"date" : "12/3/10",
-		"sumUnitPrices" : 22.1,
-		"sumQuantities" : 26
-	}, {
-		"date" : "12/5/10",
-		"sumUnitPrices" : 124.75,
-		"sumQuantities" : 120
-	}, {
-		"date" : "12/6/10",
-		"sumUnitPrices" : 18.25,
-		"sumQuantities" : 18
-	}, {
-		"date" : "12/7/10",
-		"sumUnitPrices" : 28.75,
-		"sumQuantities" : 20
-	}, {
-		"date" : "12/8/10",
-		"sumUnitPrices" : 8.65,
-		"sumQuantities" : 17
-	}, {
-		"date" : "12/9/10",
-		"sumUnitPrices" : 57,
-		"sumQuantities" : 40
-	}, {
-		"date" : "12/10/10",
-		"sumUnitPrices" : 48.45,
-		"sumQuantities" : 59
-	}, {
-		"date" : "12/13/10",
-		"sumUnitPrices" : 13.5,
-		"sumQuantities" : 6
-	}, {
-		"date" : "12/15/10",
-		"sumUnitPrices" : 19.95,
-		"sumQuantities" : 6
-	}, {
-		"date" : "12/16/10",
-		"sumUnitPrices" : 1.65,
-		"sumQuantities" : 7
-	}, {
-		"date" : "12/17/10",
-		"sumUnitPrices" : 132,
-		"sumQuantities" : 115
-	}, {
-		"date" : "12/19/10",
-		"sumUnitPrices" : 23.189999999999998,
-		"sumQuantities" : 47
-	}, {
-		"date" : "12/20/10",
-		"sumUnitPrices" : 27.45,
-		"sumQuantities" : 50
-	}, {
-		"date" : "12/23/10",
-		"sumUnitPrices" : 78.55,
-		"sumQuantities" : 79
-	}],
-	"perItemData" : [{
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 27
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Norway",
-	"perDayData" : [{
-		"date" : "12/1/10",
-		"sumUnitPrices" : 72.42,
-		"sumQuantities" : 122
-	}, {
-		"date" : "12/8/10",
-		"sumUnitPrices" : 73.42,
-		"sumQuantities" : 97
-	}],
-	"perItemData" : [{
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FIRST AID TIN",
-		"itemOccurences" : 2
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "EIRE",
-	"perDayData" : [{
-		"date" : "12/1/10",
-		"sumUnitPrices" : 29.95,
-		"sumQuantities" : 24
-	}, {
-		"date" : "12/2/10",
-		"sumUnitPrices" : 5.75,
-		"sumQuantities" : 8
-	}, {
-		"date" : "12/3/10",
-		"sumUnitPrices" : 85.65,
-		"sumQuantities" : 108
-	}, {
-		"date" : "12/6/10",
-		"sumUnitPrices" : 42.95,
-		"sumQuantities" : 39
-	}, {
-		"date" : "12/9/10",
-		"sumUnitPrices" : 35.95,
-		"sumQuantities" : 37
-	}, {
-		"date" : "12/10/10",
-		"sumUnitPrices" : 50.85,
-		"sumQuantities" : 62
-	}, {
-		"date" : "12/16/10",
-		"sumUnitPrices" : 26.25,
-		"sumQuantities" : 25
-	}, {
-		"date" : "12/17/10",
-		"sumUnitPrices" : 68.45,
-		"sumQuantities" : 79
-	}, {
-		"date" : "12/19/10",
-		"sumUnitPrices" : 21.25,
-		"sumQuantities" : 23
-	}, {
-		"date" : "12/20/10",
-		"sumUnitPrices" : 22.95,
-		"sumQuantities" : 44
-	}, {
-		"date" : "12/21/10",
-		"sumUnitPrices" : 30.95,
-		"sumQuantities" : 34
-	}, {
-		"date" : "12/23/10",
-		"sumUnitPrices" : 18.75,
-		"sumQuantities" : 19
-	}],
-	"perItemData" : [{
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}, {
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}, {
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}, {
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}, {
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}, {
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}, {
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}, {
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}, {
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}, {
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}, {
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}, {
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}, {
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}, {
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}, {
-		"itemName" : "REGENCY CAKESTAND 3 TIER",
-		"itemOccurences" : 7
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Switzerland",
-	"perDayData" : [{
-		"date" : "12/3/10",
-		"sumUnitPrices" : 7.95,
-		"sumQuantities" : 35
-	}, {
-		"date" : "12/20/10",
-		"sumUnitPrices" : 46.65,
-		"sumQuantities" : 50
-	}],
-	"perItemData" : [{
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "COFFEE MUG PEARS  DESIGN",
-		"itemOccurences" : 1
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Spain",
-	"perDayData" : [{
-		"date" : "12/3/10",
-		"sumUnitPrices" : 5.65,
-		"sumQuantities" : 74
-	}, {
-		"date" : "12/9/10",
-		"sumUnitPrices" : 68.95,
-		"sumQuantities" : 40
-	}, {
-		"date" : "12/13/10",
-		"sumUnitPrices" : 21.55,
-		"sumQuantities" : 55
-	}, {
-		"date" : "12/17/10",
-		"sumUnitPrices" : 10.95,
-		"sumQuantities" : 19
-	}],
-	"perItemData" : [{
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SUKI  SHOULDER BAG",
-		"itemOccurences" : 1
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Poland",
-	"perDayData" : [{
-		"date" : "12/3/10",
-		"sumUnitPrices" : 9.55,
-		"sumQuantities" : 39
-	}],
-	"perItemData" : [{
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "HOMEMADE JAM SCENTED CANDLES",
-		"itemOccurences" : 1
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Portugal",
-	"perDayData" : [{
-		"date" : "12/3/10",
-		"sumUnitPrices" : 8.95,
-		"sumQuantities" : 12
-	}, {
-		"date" : "12/6/10",
-		"sumUnitPrices" : 7.95,
-		"sumQuantities" : 12
-	}, {
-		"date" : "12/8/10",
-		"sumUnitPrices" : 54.1,
-		"sumQuantities" : 64
-	}, {
-		"date" : "12/9/10",
-		"sumUnitPrices" : 13.25,
-		"sumQuantities" : 24
-	}, {
-		"date" : "12/10/10",
-		"sumUnitPrices" : 14.65,
-		"sumQuantities" : 23
-	}, {
-		"date" : "12/14/10",
-		"sumUnitPrices" : 4.25,
-		"sumQuantities" : 15
-	}, {
-		"date" : "12/17/10",
-		"sumUnitPrices" : 24.75,
-		"sumQuantities" : 33
-	}],
-	"perItemData" : [{
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 6
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Italy",
-	"perDayData" : [{
-		"date" : "12/3/10",
-		"sumUnitPrices" : 24.25,
-		"sumQuantities" : 35
-	}, {
-		"date" : "12/6/10",
-		"sumUnitPrices" : 8.5,
-		"sumQuantities" : 2
-	}, {
-		"date" : "12/21/10",
-		"sumUnitPrices" : 23.5,
-		"sumQuantities" : 17
-	}],
-	"perItemData" : [{
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 2
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Belgium",
-	"perDayData" : [{
-		"date" : "12/3/10",
-		"sumUnitPrices" : 13.1,
-		"sumQuantities" : 23
-	}, {
-		"date" : "12/17/10",
-		"sumUnitPrices" : 32.75,
-		"sumQuantities" : 33
-	}, {
-		"date" : "12/21/10",
-		"sumUnitPrices" : 22.95,
-		"sumQuantities" : 17
-	}, {
-		"date" : "12/22/10",
-		"sumUnitPrices" : 37.25,
-		"sumQuantities" : 60
-	}],
-	"perItemData" : [{
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 5
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Lithuania",
-	"perDayData" : [{
-		"date" : "12/5/10",
-		"sumUnitPrices" : 34.25,
-		"sumQuantities" : 45
-	}, {
-		"date" : "12/8/10",
-		"sumUnitPrices" : 2.1,
-		"sumQuantities" : 30
-	}],
-	"perItemData" : [{
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
-		"itemOccurences" : 2
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Japan",
-	"perDayData" : [{
-		"date" : "12/5/10",
-		"sumUnitPrices" : 17.55,
-		"sumQuantities" : 21
-	}, {
-		"date" : "12/9/10",
-		"sumUnitPrices" : 2.55,
-		"sumQuantities" : 1488
-	}, {
-		"date" : "12/12/10",
-		"sumUnitPrices" : 48.45,
-		"sumQuantities" : 107
-	}],
-	"perItemData" : [{
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
-		"itemOccurences" : 2
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Iceland",
-	"perDayData" : [{
-		"date" : "12/7/10",
-		"sumUnitPrices" : 32.1,
-		"sumQuantities" : 42
-	}],
-	"perItemData" : [{
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
-		"itemOccurences" : 1
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Channel Islands",
-	"perDayData" : [{
-		"date" : "12/9/10",
-		"sumUnitPrices" : 23.95,
-		"sumQuantities" : 18
-	}],
-	"perItemData" : [{
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "CARRIAGE",
-		"itemOccurences" : 1
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Denmark",
-	"perDayData" : [{
-		"date" : "12/9/10",
-		"sumUnitPrices" : 33.95,
-		"sumQuantities" : 27
-	}],
-	"perItemData" : [{
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Cyprus",
-	"perDayData" : [{
-		"date" : "12/14/10",
-		"sumUnitPrices" : 84.55,
-		"sumQuantities" : 146
-	}],
-	"perItemData" : [{
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
-		"itemOccurences" : 2
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Sweden",
-	"perDayData" : [{
-		"date" : "12/14/10",
-		"sumUnitPrices" : 5.95,
-		"sumQuantities" : 241
-	}, {
-		"date" : "12/17/10",
-		"sumUnitPrices" : 24.29,
-		"sumQuantities" : 600
-	}],
-	"perItemData" : [{
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
-		"itemOccurences" : 2
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Austria",
-	"perDayData" : [{
-		"date" : "12/15/10",
-		"sumUnitPrices" : 0.42,
-		"sumQuantities" : 48
-	}, {
-		"date" : "12/17/10",
-		"sumUnitPrices" : 15.5,
-		"sumQuantities" : 15
-	}],
-	"perItemData" : [{
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "POSTAGE",
-		"itemOccurences" : 1
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Israel",
-	"perDayData" : [{
-		"date" : "12/15/10",
-		"sumUnitPrices" : 4.8100000000000005,
-		"sumQuantities" : 25
-	}],
-	"perItemData" : [{
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "SPACEBOY TV DINNER TRAY",
-		"itemOccurences" : 1
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Finland",
-	"perDayData" : [{
-		"date" : "12/16/10",
-		"sumUnitPrices" : 16.55,
-		"sumQuantities" : 88
-	}],
-	"perItemData" : [{
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}, {
-		"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
-		"itemOccurences" : 2
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}, {
-	"country" : "Bahrain",
-	"perDayData" : [{
-		"date" : "12/20/10",
-		"sumUnitPrices" : 3.81,
-		"sumQuantities" : 54
-	}],
-	"perItemData" : [{
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}, {
-		"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
-		"itemOccurences" : 1
-	}],
-	"uniqueDays" : [],
-	"uniqueItems" : []
-}]
+[
+	{
+		"country": "France",
+		"fullSumUnitPrices": 441.75,
+		"fullSumQuantities": 462,
+		"perDayData": [
+			{
+				"date": "12/1/10",
+				"sumUnitPrices": 22.75,
+				"sumQuantities": 43
+			}, {
+				"date": "12/3/10",
+				"sumUnitPrices": 23.45,
+				"sumQuantities": 34
+			}, {
+				"date": "12/5/10",
+				"sumUnitPrices": 66.65,
+				"sumQuantities": 70
+			}, {
+				"date": "12/7/10",
+				"sumUnitPrices": 61.45,
+				"sumQuantities": 72
+			}, {
+				"date": "12/8/10",
+				"sumUnitPrices": 10.42,
+				"sumQuantities": 35
+			}, {
+				"date": "12/9/10",
+				"sumUnitPrices": 95.35,
+				"sumQuantities": 93
+			}, {
+				"date": "12/10/10",
+				"sumUnitPrices": 33,
+				"sumQuantities": 23
+			}, {
+				"date": "12/15/10",
+				"sumUnitPrices": 67.25,
+				"sumQuantities": 67
+			}, {
+				"date": "12/16/10",
+				"sumUnitPrices": 3.65,
+				"sumQuantities": 5
+			}, {
+				"date": "12/17/10",
+				"sumUnitPrices": 10.19,
+				"sumQuantities": 202
+			}, {
+				"date": "12/20/10",
+				"sumUnitPrices": 62.65,
+				"sumQuantities": 73
+			}, {
+				"date": "12/21/10",
+				"sumUnitPrices": 154,
+				"sumQuantities": 5
+			}, {
+				"date": "12/22/10",
+				"sumUnitPrices": 3.42,
+				"sumQuantities": 23
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "POSTAGE",
+				"itemOccurences": 17
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Australia",
+		"fullSumUnitPrices": 42.5,
+		"fullSumQuantities": 40,
+		"perDayData": [
+			{
+				"date": "12/1/10",
+				"sumUnitPrices": 21.5,
+				"sumQuantities": 19
+			}, {
+				"date": "12/8/10",
+				"sumUnitPrices": 8.25,
+				"sumQuantities": 31
+			}, {
+				"date": "12/14/10",
+				"sumUnitPrices": 3.65,
+				"sumQuantities": 9
+			}, {
+				"date": "12/17/10",
+				"sumUnitPrices": 15.75,
+				"sumQuantities": 19
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "DOORMAT UNION FLAG",
+				"itemOccurences": 2
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Netherlands",
+		"fullSumUnitPrices": 72.85,
+		"fullSumQuantities": 167,
+		"perDayData": [
+			{
+				"date": "12/1/10",
+				"sumUnitPrices": 2.85,
+				"sumQuantities": 97
+			}, {
+				"date": "12/20/10",
+				"sumUnitPrices": 15.29,
+				"sumQuantities": 27
+			}, {
+				"date": "12/21/10",
+				"sumUnitPrices": 53.42,
+				"sumQuantities": 293
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "CHARLOTTE BAG SUKI DESIGN",
+				"itemOccurences": 2
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Germany",
+		"fullSumUnitPrices": 566.95,
+		"fullSumQuantities": 570,
+		"perDayData": [
+			{
+				"date": "12/1/10",
+				"sumUnitPrices": 30.95,
+				"sumQuantities": 34
+			}, {
+				"date": "12/2/10",
+				"sumUnitPrices": 19.5,
+				"sumQuantities": 13
+			}, {
+				"date": "12/3/10",
+				"sumUnitPrices": 22.1,
+				"sumQuantities": 26
+			}, {
+				"date": "12/5/10",
+				"sumUnitPrices": 124.75,
+				"sumQuantities": 120
+			}, {
+				"date": "12/6/10",
+				"sumUnitPrices": 18.25,
+				"sumQuantities": 18
+			}, {
+				"date": "12/7/10",
+				"sumUnitPrices": 28.75,
+				"sumQuantities": 20
+			}, {
+				"date": "12/8/10",
+				"sumUnitPrices": 8.65,
+				"sumQuantities": 17
+			}, {
+				"date": "12/9/10",
+				"sumUnitPrices": 57,
+				"sumQuantities": 40
+			}, {
+				"date": "12/10/10",
+				"sumUnitPrices": 48.45,
+				"sumQuantities": 59
+			}, {
+				"date": "12/13/10",
+				"sumUnitPrices": 13.5,
+				"sumQuantities": 6
+			}, {
+				"date": "12/15/10",
+				"sumUnitPrices": 19.95,
+				"sumQuantities": 6
+			}, {
+				"date": "12/16/10",
+				"sumUnitPrices": 1.65,
+				"sumQuantities": 7
+			}, {
+				"date": "12/17/10",
+				"sumUnitPrices": 132,
+				"sumQuantities": 115
+			}, {
+				"date": "12/19/10",
+				"sumUnitPrices": 23.189999999999998,
+				"sumQuantities": 47
+			}, {
+				"date": "12/20/10",
+				"sumUnitPrices": 27.45,
+				"sumQuantities": 50
+			}, {
+				"date": "12/23/10",
+				"sumUnitPrices": 78.55,
+				"sumQuantities": 79
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "POSTAGE",
+				"itemOccurences": 27
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Norway",
+		"fullSumUnitPrices": 146.42000000000002,
+		"fullSumQuantities": 196,
+		"perDayData": [
+			{
+				"date": "12/1/10",
+				"sumUnitPrices": 72.42,
+				"sumQuantities": 122
+			}, {
+				"date": "12/8/10",
+				"sumUnitPrices": 73.42,
+				"sumQuantities": 97
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "FIRST AID TIN",
+				"itemOccurences": 2
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "EIRE",
+		"fullSumUnitPrices": 411.95,
+		"fullSumQuantities": 406,
+		"perDayData": [
+			{
+				"date": "12/1/10",
+				"sumUnitPrices": 29.95,
+				"sumQuantities": 24
+			}, {
+				"date": "12/2/10",
+				"sumUnitPrices": 5.75,
+				"sumQuantities": 8
+			}, {
+				"date": "12/3/10",
+				"sumUnitPrices": 85.65,
+				"sumQuantities": 108
+			}, {
+				"date": "12/6/10",
+				"sumUnitPrices": 42.95,
+				"sumQuantities": 39
+			}, {
+				"date": "12/9/10",
+				"sumUnitPrices": 35.95,
+				"sumQuantities": 37
+			}, {
+				"date": "12/10/10",
+				"sumUnitPrices": 50.85,
+				"sumQuantities": 62
+			}, {
+				"date": "12/16/10",
+				"sumUnitPrices": 26.25,
+				"sumQuantities": 25
+			}, {
+				"date": "12/17/10",
+				"sumUnitPrices": 68.45,
+				"sumQuantities": 79
+			}, {
+				"date": "12/19/10",
+				"sumUnitPrices": 21.25,
+				"sumQuantities": 23
+			}, {
+				"date": "12/20/10",
+				"sumUnitPrices": 22.95,
+				"sumQuantities": 44
+			}, {
+				"date": "12/21/10",
+				"sumUnitPrices": 30.95,
+				"sumQuantities": 34
+			}, {
+				"date": "12/23/10",
+				"sumUnitPrices": 18.75,
+				"sumQuantities": 19
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "REGENCY CAKESTAND 3 TIER",
+				"itemOccurences": 7
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Switzerland",
+		"fullSumUnitPrices": 50.95,
+		"fullSumQuantities": 78,
+		"perDayData": [
+			{
+				"date": "12/3/10",
+				"sumUnitPrices": 7.95,
+				"sumQuantities": 35
+			}, {
+				"date": "12/20/10",
+				"sumUnitPrices": 46.65,
+				"sumQuantities": 50
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "COFFEE MUG PEARS  DESIGN",
+				"itemOccurences": 1
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Spain",
+		"fullSumUnitPrices": 75.65,
+		"fullSumQuantities": 144,
+		"perDayData": [
+			{
+				"date": "12/3/10",
+				"sumUnitPrices": 5.65,
+				"sumQuantities": 74
+			}, {
+				"date": "12/9/10",
+				"sumUnitPrices": 68.95,
+				"sumQuantities": 40
+			}, {
+				"date": "12/13/10",
+				"sumUnitPrices": 21.55,
+				"sumQuantities": 55
+			}, {
+				"date": "12/17/10",
+				"sumUnitPrices": 10.95,
+				"sumQuantities": 19
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "SUKI  SHOULDER BAG",
+				"itemOccurences": 1
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Poland",
+		"fullSumUnitPrices": 9.55,
+		"fullSumQuantities": 39,
+		"perDayData": [
+			{
+				"date": "12/3/10",
+				"sumUnitPrices": 9.55,
+				"sumQuantities": 39
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "HOMEMADE JAM SCENTED CANDLES",
+				"itemOccurences": 1
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Portugal",
+		"fullSumUnitPrices": 121.95,
+		"fullSumQuantities": 125,
+		"perDayData": [
+			{
+				"date": "12/3/10",
+				"sumUnitPrices": 8.95,
+				"sumQuantities": 12
+			}, {
+				"date": "12/6/10",
+				"sumUnitPrices": 7.95,
+				"sumQuantities": 12
+			}, {
+				"date": "12/8/10",
+				"sumUnitPrices": 54.1,
+				"sumQuantities": 64
+			}, {
+				"date": "12/9/10",
+				"sumUnitPrices": 13.25,
+				"sumQuantities": 24
+			}, {
+				"date": "12/10/10",
+				"sumUnitPrices": 14.65,
+				"sumQuantities": 23
+			}, {
+				"date": "12/14/10",
+				"sumUnitPrices": 4.25,
+				"sumQuantities": 15
+			}, {
+				"date": "12/17/10",
+				"sumUnitPrices": 24.75,
+				"sumQuantities": 33
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "POSTAGE",
+				"itemOccurences": 6
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Italy",
+		"fullSumUnitPrices": 41.25,
+		"fullSumQuantities": 52,
+		"perDayData": [
+			{
+				"date": "12/3/10",
+				"sumUnitPrices": 24.25,
+				"sumQuantities": 35
+			}, {
+				"date": "12/6/10",
+				"sumUnitPrices": 8.5,
+				"sumQuantities": 2
+			}, {
+				"date": "12/21/10",
+				"sumUnitPrices": 23.5,
+				"sumQuantities": 17
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "POSTAGE",
+				"itemOccurences": 2
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Belgium",
+		"fullSumUnitPrices": 96.1,
+		"fullSumQuantities": 106,
+		"perDayData": [
+			{
+				"date": "12/3/10",
+				"sumUnitPrices": 13.1,
+				"sumQuantities": 23
+			}, {
+				"date": "12/17/10",
+				"sumUnitPrices": 32.75,
+				"sumQuantities": 33
+			}, {
+				"date": "12/21/10",
+				"sumUnitPrices": 22.95,
+				"sumQuantities": 17
+			}, {
+				"date": "12/22/10",
+				"sumUnitPrices": 37.25,
+				"sumQuantities": 60
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "POSTAGE",
+				"itemOccurences": 5
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Lithuania",
+		"fullSumUnitPrices": 35.25,
+		"fullSumQuantities": 46,
+		"perDayData": [
+			{
+				"date": "12/5/10",
+				"sumUnitPrices": 34.25,
+				"sumQuantities": 45
+			}, {
+				"date": "12/8/10",
+				"sumUnitPrices": 2.1,
+				"sumQuantities": 30
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "FELTCRAFT PRINCESS OLIVIA DOLL",
+				"itemOccurences": 2
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Japan",
+		"fullSumUnitPrices": 66.55,
+		"fullSumQuantities": 70,
+		"perDayData": [
+			{
+				"date": "12/5/10",
+				"sumUnitPrices": 17.55,
+				"sumQuantities": 21
+			}, {
+				"date": "12/9/10",
+				"sumUnitPrices": 2.55,
+				"sumQuantities": 1488
+			}, {
+				"date": "12/12/10",
+				"sumUnitPrices": 48.45,
+				"sumQuantities": 107
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "SET OF 72 PINK HEART PAPER DOILIES",
+				"itemOccurences": 2
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Iceland",
+		"fullSumUnitPrices": 32.1,
+		"fullSumQuantities": 42,
+		"perDayData": [
+			{
+				"date": "12/7/10",
+				"sumUnitPrices": 32.1,
+				"sumQuantities": 42
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "CAMOUFLAGE EAR MUFF HEADPHONES",
+				"itemOccurences": 1
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Channel Islands",
+		"fullSumUnitPrices": 23.95,
+		"fullSumQuantities": 18,
+		"perDayData": [
+			{
+				"date": "12/9/10",
+				"sumUnitPrices": 23.95,
+				"sumQuantities": 18
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "CARRIAGE",
+				"itemOccurences": 1
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Denmark",
+		"fullSumUnitPrices": 33.95,
+		"fullSumQuantities": 27,
+		"perDayData": [
+			{
+				"date": "12/9/10",
+				"sumUnitPrices": 33.95,
+				"sumQuantities": 27
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "POSTAGE",
+				"itemOccurences": 1
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Cyprus",
+		"fullSumUnitPrices": 84.55,
+		"fullSumQuantities": 146,
+		"perDayData": [
+			{
+				"date": "12/14/10",
+				"sumUnitPrices": 84.55,
+				"sumQuantities": 146
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "FELTCRAFT PRINCESS CHARLOTTE DOLL",
+				"itemOccurences": 2
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Sweden",
+		"fullSumUnitPrices": 30.95,
+		"fullSumQuantities": 266,
+		"perDayData": [
+			{
+				"date": "12/14/10",
+				"sumUnitPrices": 5.95,
+				"sumQuantities": 241
+			}, {
+				"date": "12/17/10",
+				"sumUnitPrices": 24.29,
+				"sumQuantities": 600
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "SET OF 3 BABUSHKA STACKING TINS",
+				"itemOccurences": 2
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Austria",
+		"fullSumUnitPrices": 8.42,
+		"fullSumQuantities": 56,
+		"perDayData": [
+			{
+				"date": "12/15/10",
+				"sumUnitPrices": 0.42,
+				"sumQuantities": 48
+			}, {
+				"date": "12/17/10",
+				"sumUnitPrices": 15.5,
+				"sumQuantities": 15
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "POSTAGE",
+				"itemOccurences": 1
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Israel",
+		"fullSumUnitPrices": 4.8100000000000005,
+		"fullSumQuantities": 25,
+		"perDayData": [
+			{
+				"date": "12/15/10",
+				"sumUnitPrices": 4.8100000000000005,
+				"sumQuantities": 25
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "SPACEBOY TV DINNER TRAY",
+				"itemOccurences": 1
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Finland",
+		"fullSumUnitPrices": 16.55,
+		"fullSumQuantities": 88,
+		"perDayData": [
+			{
+				"date": "12/16/10",
+				"sumUnitPrices": 16.55,
+				"sumQuantities": 88
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "PACK OF 60 PINK PAISLEY CAKE CASES",
+				"itemOccurences": 2
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}, {
+		"country": "Bahrain",
+		"fullSumUnitPrices": "3.81",
+		"fullSumQuantities": "54",
+		"perDayData": [
+			{
+				"date": "12/20/10",
+				"sumUnitPrices": 3.81,
+				"sumQuantities": 54
+			}
+		],
+		"perItemData": [
+			{
+				"itemName": "OCEAN SCENT CANDLE IN JEWELLED BOX",
+				"itemOccurences": 1
+			}
+		],
+		"uniqueDays": [],
+		"uniqueItems": []
+	}
+];

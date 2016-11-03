@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
-	/* set the CSS */
-
-	.line {
-		fill: none;
-		stroke: steelblue;
-		stroke-width: 2px;
-	}
-
 </style>
 <body>
 
 	<!-- load the d3.js library -->
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script>
+	
 		var dataset = [];
 
 		var uniqueCountries = {};
@@ -39,33 +32,36 @@
 			}
 
 			dataset.forEach(function(x) {
+				
+				/* This part keeps track of if an item was seen yet and based on that pushes it to the full item list. */
+				
 				if (!uniqueItems[x.Description]) {
 					items.push({
 						name : x.Description,
 						occurences : 1,
 						countriesWith : []
 					});
-					//items[counter].countriesWith.push(x.Country);
 					uniqueItems[x.Description] = true;
 				} else {
 					for (var i = 0; i < items.length; i++) {
 						if (x.Description === items[i].name) {
-							//items[i].countriesWith.push(items[i].Country);
 							items[i].occurences = (items[i].occurences * 1) + 1;
 						}
 					}
 				}
 			});
 
+			/* This part creates topItems by sorting the items by number of occurences. */
+
 			topItems = items.sort(function(a, b) {
 				return a.occurences * 1 < b.occurences * 1;
 			});
+			
+			/* This part parses those top items into the top five items. */
 
 			for (var i = 0; i < 5; i++) {
 				topFiveItems.push(topItems[i]);
 			}
-
-			console.log(topFiveItems);
 
 			/* Dataset is sorted by date as given in UCI data */
 
@@ -79,6 +75,8 @@
 				if (x.Quantity * 1 < 0) {
 					x.Quantity = x.Quantity * -1;
 				}
+
+				/* Same logic as with items above; checks if country has been added to global var countryData yet and acts accordingly. */
 
 				if (!uniqueCountries[x.Country]) {
 					var tempDayData = [];
@@ -117,6 +115,8 @@
 						}
 					}
 
+					/* Same logic but breaks down data into data per date (in addition to per country above). */
+
 					if (!countryData[i].uniqueDays[x.InvoiceDate]) {
 						countryData[i].perDayData.push({
 							date : x.InvoiceDate,
@@ -154,6 +154,8 @@
 
 				}
 			});
+			
+			/* This is just us cleaning up the data for how we actually used it, which ended up not involving items. */
 
 			for (var i = 0; i < countryData.length; i++) {
 				var tempArray = [];
@@ -170,12 +172,15 @@
 				for (var j = 0; j < countryData[i].perItemData.length; j++) {
 
 					tempArray = [];
-					for (var k = 0; k < 15; k++) {
+					for (var k = 0; k < 1; k++) {
 						tempArray.push(countryData[i].perItemData[j]);
 					}
 				}
 				countryData[i].perItemData = tempArray;
 			}
+			
+			/* This prints the JSON to the console which we copy and pasted into data.json file */
+			
 			console.log(JSON.stringify(countryData));
 		});
 

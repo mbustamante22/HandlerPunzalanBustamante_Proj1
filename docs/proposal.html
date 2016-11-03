@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <!--
@@ -14,19 +13,28 @@ Due: October 25, 2016
 
 	<head>
 
-		<title>CS 3665: Project 1 Proposal</title>
+		<title>CS 3665: Project 1, Proposal</title>
 
 		<h1>CS 3665: Project 1 Proposal</h1>
-		<h3>Grace Handler, Grace Punzalan, Maddie Bustamante</h3>
-		<h4><i>Last Updated: 10/24/2016 @ 9:35pm</i></h4>
-		<h4><i>Description due: 10/25/2016 @ 10:00pm</i></h4>
+		<href src="">
+			Here is a link to our scatterplot.
+		</href>
 		<br>
-		***<br>
-		All three of us literally typed this up together, so the work was distributed equally, thus the breakdown is:<br>
-		Grace Handler: ~33.3%<br>
-		Grace Punzalan: ~33.3%<br>
-		Maddie Bustamante: ~33.4%<br>
-		We are working on creating a table now!<br>
+		<href src="">
+			Here is a link to our line graph.
+		</href>
+		<br>
+		<h3>Grace Handler, Grace Punzalan, Maddie Bustamante</h3>
+		<h4><i>Last Updated: 11/3/2016 @ 9:30pm</i></h4>
+		<br>
+		***
+		<br>
+		Grace Handler: ~33.3% [Data parsing, Scatterplot, Description Updates]
+		<br>
+		Grace Punzalan: ~33.3%[Line graph basic template, Comments]
+		<br>
+		Maddie Bustamante: ~33.4%[Line graph interactivity, Proposal]
+		<br>
 		***
 
 	</head>
@@ -53,25 +61,40 @@ Due: October 25, 2016
 		<p>
 			The name of our dataset is "Online Retail Data Set."
 			<a href="http://archive.ics.uci.edu/ml/datasets/Online+Retail#"> Here is the link to the source.</a>
-				<br>
-				<br>
-				There are 8 attributes. The attributes are: Invoice number , Stock code , Description, Quantity, invoice date, unit price, customer ID, and country.
-				<br><br>
-				Further description from the UCI website is pasted below:<br>
-				InvoiceNo: Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation. <br>
-StockCode: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product. <br>
-Description: Product (item) name. Nominal. <br>
-Quantity: The quantities of each product (item) per transaction. Numeric.	<br>
-InvoiceDate: Invice Date and time. Numeric, the day and time when each transaction was generated. <br>
-UnitPrice: Unit price. Numeric, Product price per unit in sterling. <br>
-CustomerID: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer. <br>
-Country: Country name. Nominal, the name of the country where each customer resides<br><br>
-			Here is an example of a subset of the data with column names:<br>
-			
-			InvoiceNo	StockCode	Description	Quantity	InvoiceDate	UnitPrice	CustomerID	Country<br>
-536365	85123A	WHITE HANGING HEART T-LIGHT HOLDER	6	12/1/10 8:26	2.55	17850	United Kingdom<br>
-536365	71053	WHITE METAL LANTERN	6	12/1/10 8:26	3.39	17850	United Kingdom<br>
-536365	84406B	CREAM CUPID HEARTS COAT HANGER	8	12/1/10 8:26	2.75	17850	United Kingdom
+			<br>
+			<br>
+			There are 8 attributes. The attributes are: Invoice number , Stock code , Description, Quantity, invoice date, unit price, customer ID, and country.
+			<br>
+			<br>
+			Further description from the UCI website is pasted below:
+			<br>
+			InvoiceNo: Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation.
+			<br>
+			StockCode: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.
+			<br>
+			Description: Product (item) name. Nominal.
+			<br>
+			Quantity: The quantities of each product (item) per transaction. Numeric.
+			<br>
+			InvoiceDate: Invice Date and time. Numeric, the day and time when each transaction was generated.
+			<br>
+			UnitPrice: Unit price. Numeric, Product price per unit in sterling.
+			<br>
+			CustomerID: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.
+			<br>
+			Country: Country name. Nominal, the name of the country where each customer resides
+			<br>
+			<br>
+			Here is an example of a subset of the data with column names:
+			<br>
+
+			InvoiceNo	StockCode	Description	Quantity	InvoiceDate	UnitPrice	CustomerID	Country
+			<br>
+			536365	85123A	WHITE HANGING HEART T-LIGHT HOLDER	6	12/1/10 8:26	2.55	17850	United Kingdom
+			<br>
+			536365	71053	WHITE METAL LANTERN	6	12/1/10 8:26	3.39	17850	United Kingdom
+			<br>
+			536365	84406B	CREAM CUPID HEARTS COAT HANGER	8	12/1/10 8:26	2.75	17850	United Kingdom
 		</p>
 		<br>
 		<h2><u>Attributes We Will Work With</u></h2>
@@ -104,7 +127,7 @@ Country: Country name. Nominal, the name of the country where each customer resi
 		<br>
 		<h2><u>Sketch Of Interface</u></h2>
 		<p>
-		  <img src="projectPic.png"/>
+			<img src="projectPic.png"/>
 		</p>
 		<br>
 		<h2><u>List of Interactions</u></h2>
@@ -117,34 +140,30 @@ Country: Country name. Nominal, the name of the country where each customer resi
 			Multiple lines can be clicked at one so as to make it clearer to compare. The user can also check "sum of unit prices" or "sum of quantities" (only one at a time) to change what the x-axis shows and the chart will adjust and update accordingly.
 			<br>
 			<br>
-			<i>For the bubble chart,</i> <!--the user can hover
-			over a bubble and a tooltip will show the country, the
-			item, and how many occurences it had.--> we will have a check box for top 5 most bought items. Once the user clicks on one of these items, circles representing countries will be drawn, where the radius varies depending on how many of that item was bought the given country. 
-
-
+			<i>For the scatterplot,</i> we will graph number of items bought in December versus money spent on those items per country.
+			Each circle can be hovered over to display a tooltip with the country name and respective data.
 
 		</p>
 		<br>
 		<h2><u>Our Two D3 Layouts</u></h2>
 		<p>
-			We will have a line chart and a bubble chart.
+			We will have a line chart and a scatterplot.
 		</p>
 		<br>
 		<h2><u>A New D3 Concept</u></h2>
 		<p>
-			The new concepts we will use for the line chart are: concept of a line graph.
+			The new concepts we will use for the line chart are: concept of a line graph, creating checkboxes.
 			We will reference this site: http://bl.ocks.org/benjchristensen/2657838
 			<br>
 			<br>
-			The new concepts we will use for the bubble chart are: concept of a hierarchy, concept of a node.
-			We will reference this site: http://bl.ocks.org/mbostock/4063269
+			The new concepts we will use for the bubble chart are: tooltips.
 		</p>
 		<br>
 		<h2><u>Implementation Path</u></h2>
 		<p>
 			First, we will clean up the data so that it only includes the month of December and the relevant attributes as mentioned above. Then, we will read in the data so it is in a usable dataset format like we had for previous assignments.
 			Then, we will work on creating one stable line chart with "sum of unit prices," then add the functionality to swtitch to "sum of quantities." At that point, we can add the hover and click functionalities. Then, we will begin to implement
-			the bubble chart using the aforementioned source. First, we will implement it as a stable bubble chart. Then we will add tooltips. Then, if we have time, we can make it so the bubbles get bigger when you hover over them.
+			the scatterplot. We will adapt from Grace Handler's scatterplot for our last project and add tooltips and improve quality of code.
 		</p>
 
 	</body>

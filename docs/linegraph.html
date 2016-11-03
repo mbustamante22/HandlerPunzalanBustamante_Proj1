@@ -1,226 +1,819 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title> Project 1: Line Graph Template </title>
-        <script type="text/javascript" src="d3.v3.js"></script>
+	<head>
+		<meta charset="utf-8">
+		<title> Project 1: Line Graph Template </title>
+		<script type="text/javascript" src="d3/d3.v3.js"></script>
 
-	<style type="text/css">
-	 
+		<style type="text/css">
+			.axis path, .axis line {
+				fill: none;
+				stroke: black;
+				shape-rendering: crispEdges;
+			}
 
-	  .axis path,
-	  .axis line {
-	      fill: none;
-	      stroke: black;
-	      shape-rendering: crispEdges;
-	  }
+			.axis text {
+				font-family: sans-serif;
+				font-size: 15px;
+			}
 
-	  .axis text {
-	      font-family: sans-serif;
-	      font-size: 15px;
-	  }
+			#tooltip.hidden {
+				display: none;
+			}
+			.rectangle {
+				fill: none;
+				pointer-events: all;
+			}
+		</style>
 
-	  #tooltip.hidden{
-	     display:none;
-	  }
-	  .rectangle {
-	     fill: none;
-	     pointer-events: all;
-	  }
-	</style>
+	</head>
+
+	<body>
+		<h1 style= "font-family: Verdana"> PROJECT 1: LINE GRAPH </h1>
+
+		<script type = "text/javascript">
+			var data = [{
+				"country" : "France",
+				"fullSumUnitPrices" : 441.75,
+				"fullSumQuantities" : 462,
+				"perDayData" : [{
+					"date" : "12/1/10",
+					"sumUnitPrices" : 22.75,
+					"sumQuantities" : 43
+				}, {
+					"date" : "12/3/10",
+					"sumUnitPrices" : 23.45,
+					"sumQuantities" : 34
+				}, {
+					"date" : "12/5/10",
+					"sumUnitPrices" : 66.65,
+					"sumQuantities" : 70
+				}, {
+					"date" : "12/7/10",
+					"sumUnitPrices" : 61.45,
+					"sumQuantities" : 72
+				}, {
+					"date" : "12/8/10",
+					"sumUnitPrices" : 10.42,
+					"sumQuantities" : 35
+				}, {
+					"date" : "12/9/10",
+					"sumUnitPrices" : 95.35,
+					"sumQuantities" : 93
+				}, {
+					"date" : "12/10/10",
+					"sumUnitPrices" : 33,
+					"sumQuantities" : 23
+				}, {
+					"date" : "12/15/10",
+					"sumUnitPrices" : 67.25,
+					"sumQuantities" : 67
+				}, {
+					"date" : "12/16/10",
+					"sumUnitPrices" : 3.65,
+					"sumQuantities" : 5
+				}, {
+					"date" : "12/17/10",
+					"sumUnitPrices" : 10.19,
+					"sumQuantities" : 202
+				}, {
+					"date" : "12/20/10",
+					"sumUnitPrices" : 62.65,
+					"sumQuantities" : 73
+				}, {
+					"date" : "12/21/10",
+					"sumUnitPrices" : 154,
+					"sumQuantities" : 5
+				}, {
+					"date" : "12/22/10",
+					"sumUnitPrices" : 3.42,
+					"sumQuantities" : 23
+				}],
+				"perItemData" : [{
+					"itemName" : "POSTAGE",
+					"itemOccurences" : 17
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Australia",
+				"fullSumUnitPrices" : 42.5,
+				"fullSumQuantities" : 40,
+				"perDayData" : [{
+					"date" : "12/1/10",
+					"sumUnitPrices" : 21.5,
+					"sumQuantities" : 19
+				}, {
+					"date" : "12/8/10",
+					"sumUnitPrices" : 8.25,
+					"sumQuantities" : 31
+				}, {
+					"date" : "12/14/10",
+					"sumUnitPrices" : 3.65,
+					"sumQuantities" : 9
+				}, {
+					"date" : "12/17/10",
+					"sumUnitPrices" : 15.75,
+					"sumQuantities" : 19
+				}],
+				"perItemData" : [{
+					"itemName" : "DOORMAT UNION FLAG",
+					"itemOccurences" : 2
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Netherlands",
+				"fullSumUnitPrices" : 72.85,
+				"fullSumQuantities" : 167,
+				"perDayData" : [{
+					"date" : "12/1/10",
+					"sumUnitPrices" : 2.85,
+					"sumQuantities" : 97
+				}, {
+					"date" : "12/20/10",
+					"sumUnitPrices" : 15.29,
+					"sumQuantities" : 27
+				}, {
+					"date" : "12/21/10",
+					"sumUnitPrices" : 53.42,
+					"sumQuantities" : 293
+				}],
+				"perItemData" : [{
+					"itemName" : "CHARLOTTE BAG SUKI DESIGN",
+					"itemOccurences" : 2
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Germany",
+				"fullSumUnitPrices" : 566.95,
+				"fullSumQuantities" : 570,
+				"perDayData" : [{
+					"date" : "12/1/10",
+					"sumUnitPrices" : 30.95,
+					"sumQuantities" : 34
+				}, {
+					"date" : "12/2/10",
+					"sumUnitPrices" : 19.5,
+					"sumQuantities" : 13
+				}, {
+					"date" : "12/3/10",
+					"sumUnitPrices" : 22.1,
+					"sumQuantities" : 26
+				}, {
+					"date" : "12/5/10",
+					"sumUnitPrices" : 124.75,
+					"sumQuantities" : 120
+				}, {
+					"date" : "12/6/10",
+					"sumUnitPrices" : 18.25,
+					"sumQuantities" : 18
+				}, {
+					"date" : "12/7/10",
+					"sumUnitPrices" : 28.75,
+					"sumQuantities" : 20
+				}, {
+					"date" : "12/8/10",
+					"sumUnitPrices" : 8.65,
+					"sumQuantities" : 17
+				}, {
+					"date" : "12/9/10",
+					"sumUnitPrices" : 57,
+					"sumQuantities" : 40
+				}, {
+					"date" : "12/10/10",
+					"sumUnitPrices" : 48.45,
+					"sumQuantities" : 59
+				}, {
+					"date" : "12/13/10",
+					"sumUnitPrices" : 13.5,
+					"sumQuantities" : 6
+				}, {
+					"date" : "12/15/10",
+					"sumUnitPrices" : 19.95,
+					"sumQuantities" : 6
+				}, {
+					"date" : "12/16/10",
+					"sumUnitPrices" : 1.65,
+					"sumQuantities" : 7
+				}, {
+					"date" : "12/17/10",
+					"sumUnitPrices" : 132,
+					"sumQuantities" : 115
+				}, {
+					"date" : "12/19/10",
+					"sumUnitPrices" : 23.189999999999998,
+					"sumQuantities" : 47
+				}, {
+					"date" : "12/20/10",
+					"sumUnitPrices" : 27.45,
+					"sumQuantities" : 50
+				}, {
+					"date" : "12/23/10",
+					"sumUnitPrices" : 78.55,
+					"sumQuantities" : 79
+				}],
+				"perItemData" : [{
+					"itemName" : "POSTAGE",
+					"itemOccurences" : 27
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Norway",
+				"fullSumUnitPrices" : 146.42000000000002,
+				"fullSumQuantities" : 196,
+				"perDayData" : [{
+					"date" : "12/1/10",
+					"sumUnitPrices" : 72.42,
+					"sumQuantities" : 122
+				}, {
+					"date" : "12/8/10",
+					"sumUnitPrices" : 73.42,
+					"sumQuantities" : 97
+				}],
+				"perItemData" : [{
+					"itemName" : "FIRST AID TIN",
+					"itemOccurences" : 2
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "EIRE",
+				"fullSumUnitPrices" : 411.95,
+				"fullSumQuantities" : 406,
+				"perDayData" : [{
+					"date" : "12/1/10",
+					"sumUnitPrices" : 29.95,
+					"sumQuantities" : 24
+				}, {
+					"date" : "12/2/10",
+					"sumUnitPrices" : 5.75,
+					"sumQuantities" : 8
+				}, {
+					"date" : "12/3/10",
+					"sumUnitPrices" : 85.65,
+					"sumQuantities" : 108
+				}, {
+					"date" : "12/6/10",
+					"sumUnitPrices" : 42.95,
+					"sumQuantities" : 39
+				}, {
+					"date" : "12/9/10",
+					"sumUnitPrices" : 35.95,
+					"sumQuantities" : 37
+				}, {
+					"date" : "12/10/10",
+					"sumUnitPrices" : 50.85,
+					"sumQuantities" : 62
+				}, {
+					"date" : "12/16/10",
+					"sumUnitPrices" : 26.25,
+					"sumQuantities" : 25
+				}, {
+					"date" : "12/17/10",
+					"sumUnitPrices" : 68.45,
+					"sumQuantities" : 79
+				}, {
+					"date" : "12/19/10",
+					"sumUnitPrices" : 21.25,
+					"sumQuantities" : 23
+				}, {
+					"date" : "12/20/10",
+					"sumUnitPrices" : 22.95,
+					"sumQuantities" : 44
+				}, {
+					"date" : "12/21/10",
+					"sumUnitPrices" : 30.95,
+					"sumQuantities" : 34
+				}, {
+					"date" : "12/23/10",
+					"sumUnitPrices" : 18.75,
+					"sumQuantities" : 19
+				}],
+				"perItemData" : [{
+					"itemName" : "REGENCY CAKESTAND 3 TIER",
+					"itemOccurences" : 7
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Switzerland",
+				"fullSumUnitPrices" : 50.95,
+				"fullSumQuantities" : 78,
+				"perDayData" : [{
+					"date" : "12/3/10",
+					"sumUnitPrices" : 7.95,
+					"sumQuantities" : 35
+				}, {
+					"date" : "12/20/10",
+					"sumUnitPrices" : 46.65,
+					"sumQuantities" : 50
+				}],
+				"perItemData" : [{
+					"itemName" : "COFFEE MUG PEARS  DESIGN",
+					"itemOccurences" : 1
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Spain",
+				"fullSumUnitPrices" : 75.65,
+				"fullSumQuantities" : 144,
+				"perDayData" : [{
+					"date" : "12/3/10",
+					"sumUnitPrices" : 5.65,
+					"sumQuantities" : 74
+				}, {
+					"date" : "12/9/10",
+					"sumUnitPrices" : 68.95,
+					"sumQuantities" : 40
+				}, {
+					"date" : "12/13/10",
+					"sumUnitPrices" : 21.55,
+					"sumQuantities" : 55
+				}, {
+					"date" : "12/17/10",
+					"sumUnitPrices" : 10.95,
+					"sumQuantities" : 19
+				}],
+				"perItemData" : [{
+					"itemName" : "SUKI  SHOULDER BAG",
+					"itemOccurences" : 1
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Poland",
+				"fullSumUnitPrices" : 9.55,
+				"fullSumQuantities" : 39,
+				"perDayData" : [{
+					"date" : "12/3/10",
+					"sumUnitPrices" : 9.55,
+					"sumQuantities" : 39
+				}],
+				"perItemData" : [{
+					"itemName" : "HOMEMADE JAM SCENTED CANDLES",
+					"itemOccurences" : 1
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Portugal",
+				"fullSumUnitPrices" : 121.95,
+				"fullSumQuantities" : 125,
+				"perDayData" : [{
+					"date" : "12/3/10",
+					"sumUnitPrices" : 8.95,
+					"sumQuantities" : 12
+				}, {
+					"date" : "12/6/10",
+					"sumUnitPrices" : 7.95,
+					"sumQuantities" : 12
+				}, {
+					"date" : "12/8/10",
+					"sumUnitPrices" : 54.1,
+					"sumQuantities" : 64
+				}, {
+					"date" : "12/9/10",
+					"sumUnitPrices" : 13.25,
+					"sumQuantities" : 24
+				}, {
+					"date" : "12/10/10",
+					"sumUnitPrices" : 14.65,
+					"sumQuantities" : 23
+				}, {
+					"date" : "12/14/10",
+					"sumUnitPrices" : 4.25,
+					"sumQuantities" : 15
+				}, {
+					"date" : "12/17/10",
+					"sumUnitPrices" : 24.75,
+					"sumQuantities" : 33
+				}],
+				"perItemData" : [{
+					"itemName" : "POSTAGE",
+					"itemOccurences" : 6
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Italy",
+				"fullSumUnitPrices" : 41.25,
+				"fullSumQuantities" : 52,
+				"perDayData" : [{
+					"date" : "12/3/10",
+					"sumUnitPrices" : 24.25,
+					"sumQuantities" : 35
+				}, {
+					"date" : "12/6/10",
+					"sumUnitPrices" : 8.5,
+					"sumQuantities" : 2
+				}, {
+					"date" : "12/21/10",
+					"sumUnitPrices" : 23.5,
+					"sumQuantities" : 17
+				}],
+				"perItemData" : [{
+					"itemName" : "POSTAGE",
+					"itemOccurences" : 2
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Belgium",
+				"fullSumUnitPrices" : 96.1,
+				"fullSumQuantities" : 106,
+				"perDayData" : [{
+					"date" : "12/3/10",
+					"sumUnitPrices" : 13.1,
+					"sumQuantities" : 23
+				}, {
+					"date" : "12/17/10",
+					"sumUnitPrices" : 32.75,
+					"sumQuantities" : 33
+				}, {
+					"date" : "12/21/10",
+					"sumUnitPrices" : 22.95,
+					"sumQuantities" : 17
+				}, {
+					"date" : "12/22/10",
+					"sumUnitPrices" : 37.25,
+					"sumQuantities" : 60
+				}],
+				"perItemData" : [{
+					"itemName" : "POSTAGE",
+					"itemOccurences" : 5
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Lithuania",
+				"fullSumUnitPrices" : 35.25,
+				"fullSumQuantities" : 46,
+				"perDayData" : [{
+					"date" : "12/5/10",
+					"sumUnitPrices" : 34.25,
+					"sumQuantities" : 45
+				}, {
+					"date" : "12/8/10",
+					"sumUnitPrices" : 2.1,
+					"sumQuantities" : 30
+				}],
+				"perItemData" : [{
+					"itemName" : "FELTCRAFT PRINCESS OLIVIA DOLL",
+					"itemOccurences" : 2
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Japan",
+				"fullSumUnitPrices" : 66.55,
+				"fullSumQuantities" : 70,
+				"perDayData" : [{
+					"date" : "12/5/10",
+					"sumUnitPrices" : 17.55,
+					"sumQuantities" : 21
+				}, {
+					"date" : "12/9/10",
+					"sumUnitPrices" : 2.55,
+					"sumQuantities" : 1488
+				}, {
+					"date" : "12/12/10",
+					"sumUnitPrices" : 48.45,
+					"sumQuantities" : 107
+				}],
+				"perItemData" : [{
+					"itemName" : "SET OF 72 PINK HEART PAPER DOILIES",
+					"itemOccurences" : 2
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Iceland",
+				"fullSumUnitPrices" : 32.1,
+				"fullSumQuantities" : 42,
+				"perDayData" : [{
+					"date" : "12/7/10",
+					"sumUnitPrices" : 32.1,
+					"sumQuantities" : 42
+				}],
+				"perItemData" : [{
+					"itemName" : "CAMOUFLAGE EAR MUFF HEADPHONES",
+					"itemOccurences" : 1
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Channel Islands",
+				"fullSumUnitPrices" : 23.95,
+				"fullSumQuantities" : 18,
+				"perDayData" : [{
+					"date" : "12/9/10",
+					"sumUnitPrices" : 23.95,
+					"sumQuantities" : 18
+				}],
+				"perItemData" : [{
+					"itemName" : "CARRIAGE",
+					"itemOccurences" : 1
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Denmark",
+				"fullSumUnitPrices" : 33.95,
+				"fullSumQuantities" : 27,
+				"perDayData" : [{
+					"date" : "12/9/10",
+					"sumUnitPrices" : 33.95,
+					"sumQuantities" : 27
+				}],
+				"perItemData" : [{
+					"itemName" : "POSTAGE",
+					"itemOccurences" : 1
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Cyprus",
+				"fullSumUnitPrices" : 84.55,
+				"fullSumQuantities" : 146,
+				"perDayData" : [{
+					"date" : "12/14/10",
+					"sumUnitPrices" : 84.55,
+					"sumQuantities" : 146
+				}],
+				"perItemData" : [{
+					"itemName" : "FELTCRAFT PRINCESS CHARLOTTE DOLL",
+					"itemOccurences" : 2
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Sweden",
+				"fullSumUnitPrices" : 30.95,
+				"fullSumQuantities" : 266,
+				"perDayData" : [{
+					"date" : "12/14/10",
+					"sumUnitPrices" : 5.95,
+					"sumQuantities" : 241
+				}, {
+					"date" : "12/17/10",
+					"sumUnitPrices" : 24.29,
+					"sumQuantities" : 600
+				}],
+				"perItemData" : [{
+					"itemName" : "SET OF 3 BABUSHKA STACKING TINS",
+					"itemOccurences" : 2
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Austria",
+				"fullSumUnitPrices" : 8.42,
+				"fullSumQuantities" : 56,
+				"perDayData" : [{
+					"date" : "12/15/10",
+					"sumUnitPrices" : 0.42,
+					"sumQuantities" : 48
+				}, {
+					"date" : "12/17/10",
+					"sumUnitPrices" : 15.5,
+					"sumQuantities" : 15
+				}],
+				"perItemData" : [{
+					"itemName" : "POSTAGE",
+					"itemOccurences" : 1
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Israel",
+				"fullSumUnitPrices" : 4.8100000000000005,
+				"fullSumQuantities" : 25,
+				"perDayData" : [{
+					"date" : "12/15/10",
+					"sumUnitPrices" : 4.8100000000000005,
+					"sumQuantities" : 25
+				}],
+				"perItemData" : [{
+					"itemName" : "SPACEBOY TV DINNER TRAY",
+					"itemOccurences" : 1
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Finland",
+				"fullSumUnitPrices" : 16.55,
+				"fullSumQuantities" : 88,
+				"perDayData" : [{
+					"date" : "12/16/10",
+					"sumUnitPrices" : 16.55,
+					"sumQuantities" : 88
+				}],
+				"perItemData" : [{
+					"itemName" : "PACK OF 60 PINK PAISLEY CAKE CASES",
+					"itemOccurences" : 2
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}, {
+				"country" : "Bahrain",
+				"fullSumUnitPrices" : "3.81",
+				"fullSumQuantities" : "54",
+				"perDayData" : [{
+					"date" : "12/20/10",
+					"sumUnitPrices" : 3.81,
+					"sumQuantities" : 54
+				}],
+				"perItemData" : [{
+					"itemName" : "OCEAN SCENT CANDLE IN JEWELLED BOX",
+					"itemOccurences" : 1
+				}],
+				"uniqueDays" : [],
+				"uniqueItems" : []
+			}];
+
+			/////////////////////////////////////////////////////////////////////////////
+			//RANDOM dataset
+			var dataset = [0, 0, 0, 0, 0];
+			var dataset2 = [1, 20, 30, 4, 5];
+			for (var i = 0; i < 10; i++) {
+				dataset.push(Math.round(Math.random() * 15))
+				dataset2.push(Math.round(Math.random() * 25))
+			}
+			//gobal variables
+
+			var w = 1300;
+			var h = 500;
+
+			//2 svg spaces in the space
+			////////////////////////////////////////////
+			var information = d3.select("body").append("svg").attr("width", w).attr("height", 50);
+
+			var space = d3.select("body").append("svg").attr("width", w).attr("height", h);
+
+			//////////////////////////////////////////////
+
+			//x scale: putting all the values from the dataset in the svg within w
+			var xScale = d3.scale.linear().domain([1, 24]).range([80, w - 50]);
+			//y-scale: makes sure that the highes value in the set fits in svg h
+			var yScale = d3.scale.linear().domain([0, 180]).range([h - 50, 30]);
+
+			//line
+			var line = d3.svg.line()
+			//.interpolate("cardinal")
+			.x(function(d, i) {
+				//return x coordinate where we want to graph
+				//uses the index for now
+
+				var date = d.date.split("/");
+				return xScale(date[1]);
+			}).y(function(d, i) {
+				//return x coordinate where we want to graph
+				//uses the index for now
+				return yScale(d.sumUnitPrices);
+			});
+
+			//creating X axis
+			function xAxis() {
+				return d3.svg.axis().scale(xScale).orient("bottom").ticks(15)
+			}
 
 
-    </head>
+			space.append("g").attr("class", "axis").attr("transform", "translate(0, " + (h - 50) + ") ").call(xAxis());
 
+			//creating the Y axis
+			var yAxis = d3.svg.axis().scale(yScale).orient("left");
 
-    <body>
-      <h1 style= "font-family: Verdana"> PROJECT 1: LINE GRAPH </h1>
-    
-      <script type = "text/javascript">
+			space.append("g").attr("class", "axis").attr("transform", "translate(80,0)").call(yAxis);
 
+			//x-axis title
+			space.append("text").text("days in December 2010").attr("x", w - 50).attr("y", h - 10).attr("text-anchor", "end");
 
- 
-      var dataset = [0,0,0,0,0];
-      var dataset2 = [1,20,30,4,5];
-      for( var i = 0; i < 10; i++){
-		dataset.push(Math.round(Math.random() * 15))
-		dataset2.push(Math.round(Math.random() * 25))
-			  }
-      var color = ["green", "teal"];
-      var w = 1000;
-      var h = 500;
+			//y-axis title
+			space.append("text").text(" sum of unit price ($) ").attr("x", 10).attr("y", h / 2 - 50).attr("text-anchor", "start").attr("style", "writing-mode: tb; glyph-orientation-vertical:1");
+			//changes the orientation of the text
 
-      var information = d3.select("body")
-                  .append("svg")
-                  .attr("width",w)
-                  .attr("height", 50);
+			/////////////////////////////////////////////////////////////////////////
+			// append a rect on space svg, allowing the indicator to work on the
+			// rectangualar space
 
-      var space = d3.select("body")
-                  .append("svg")
-                  .attr("width",w )
-                  .attr("height",h);
-      
-      //x scale: putting all the values from the dataset in the svg within w 
-      var xScale = d3.scale.linear()
-         .domain([0, dataset.length])
-         .range([50,w-50]);
-      //y-scale: makes sure that the highes value in the set fits in svg h
-      var yScale = d3.scale.linear()
-         .domain([0, /*d3.max(dataset)*/30])
-         .range([h - 50, 30]);
+			space.append("rect").attr("class", "rectangle").attr("width", w).attr("height", h).on("mouseover", function() {
+				indicator.style("display", null);
+			}).on("mouseout", function() {
+				indicator.style("display", "none");
+			}).on("mousemove", update);
 
-      //line
-      var line = d3.svg.line()
-          .x(function(d,i){
-              //return x coordinate where we want to graph
-              //uses the index for now
-              return xScale(i);
-          })
-          .y(function(d){ return yScale(d); 
-          });
+			////////////////////////////////////////////////////////////////////
+			//Function that sends all the country data to drawLine function
+			drawAllLines(data);
 
+			function drawAllLines(data) {
+				for (var i = 0; i < data.length; i++) {
+					drawLine(data[i].perDayData, i);
 
+				}
+			}
 
-      //creating X axis
-      function xAxis() {
-           return  d3.svg.axis()
-           .scale(xScale)
-           .orient("bottom")
-           .ticks(5)
-      }
+			///////////////////////////////////////////////////////////////////
+			// function that draws each line on the svg given a dataset
+			// on click: if the line is not bold, the line will updtate to a thicker
+			// stroke width. If it's already bold, remove the
+			// bolded line and redraw the line by calling the function again.
 
-     space.append("g").attr("class", "axis")
-	   .attr("transform", "translate(0, " + (h- 50) + ") " )
-	   .call(xAxis());
+			function drawLine(perDayData, index) {
+				var bool = true;
+				//tracks whether the line is bolded or not
+				space.append("path")
+				.attr("d", line(perDayData))
+				.attr("id", data[index].country)
+				.attr("stroke", makeColor())
+				.attr("stroke-width", 1.5)
+				.attr("fill", "none")
+				.on("click", function() {
+					//if (bool) {
+						console.log(d3.select(this));
+						//make line thicker
+						d3.select(this).attr("stroke", "black").attr("stroke-width", 6)
+						//alert(d3.select(this).attr("id"));
+						bool = false;
+					//} else {
+						//remove and redraw the original line
+						//d3.select(this).remove();
+						//drawLine(perDayData, index)
+					//}
 
+					;
+				});
 
-      //creating the Y axis
-      var yAxis = d3.svg.axis()
-           .scale(yScale)
-           .orient("left");
+			}
 
-     space.append("g").attr("class", "axis")
-	   .attr("transform", "translate(50,0)" )
-	   .call(yAxis);
+			//////////////////////////////////////////////////////////////////////////
+			// indicator: the line that indicates the location of the mouse
+			// follows the cursor
+			var indicator = space.append("rect").attr("width", .1).attr("height", h - 80).style("display", "none").style("pointer-events", "none").style("stroke", "black").style("fill", "none").style("stroke-width", "1px");
 
-      //x-axis title
-      space.append("text")
-          .text("December")
-	  .attr("x",w/2 + 50)
-	  .attr("y",h - 10)
-	  .attr("text-anchor", "end");
-	
-	//y-axis title
-      space.append("text")
-	  .text(" sum of unit price ($) ")
-	  .attr("x",10)
-	  .attr("y", h/2 - 50)
-	  .attr("text-anchor", "start")
-	  .attr("style", "writing-mode: tb; glyph-orientation-vertical:1");
-          //changes the orientation of the text
+			///////////////////////////////////////////////////////////////////////
+			// gets called by the rect svg, which determined the x position of the
+			// line indicator
+			function update() {
+				var mouse = d3.mouse(this);
+				//indicator.attr("x", mouse[0]);
+				//indicator.attr("y", 30);
 
-      /////////////////////////////////////////////////////////////////////////
+				var index = Math.round(xScale.invert(mouse[0]));
+				//since I'm using integer indeces, round up to the nearest whole number
 
-       space.append("rect")
-      .attr("class", "rectangle")
-      .attr("width", w)
-      .attr("height",h)
-      .on("mouseover", function() {indicator.style("display", null);})
-      .on("mouseout", function() {indicator.style("display", "none");})
-      .on("mousemove", update); 
-      
-      //USING DATASET
+				//alert("dataset1: " +dataset[index]+ ", dataset2:" + dataset2[index]);
 
-      drawLine(dataset);
-      drawLine(dataset2);			  
-      function drawLine(dataset) {
-      var bool = true;
-      space.append("path").attr("d",line(dataset))
-           .attr("stroke", color[dataset[0]])
-           .attr("stroke-width", 1.5)
-           .attr("fill", "none")
-           .on("click", function(){
-			   if(bool){
-                           //make line thicker
-                           d3.select(this).attr("stroke", color[dataset[0]])
-                                          .attr("stroke-width", 5)
-			   bool = false;
-			   }
-			   else{
-			   d3.select(this).remove();
-			   drawLine(dataset)
-			   }
+				// information is another rectangular svg where information is being displayed
+				information.append("rect").attr("x", 50)// left margin
+				.attr("width", w - 50 - 50)// w minus left and right margins
+				.attr("height", 50)//bottom margin
+				.style("fill", "white");
 
-                           ;});
-
-      }			  
-
- var indicator = space.append("rect")
-            .attr("width", .1)
-            .attr("height", h - 80)
-	    .style("display", "none")
-            .style("pointer-events", "none")
-            .style("stroke", "black")
-            .style("fill", "red")
-            .style("stroke-width", "1px");
-
-
-      function update(){
-         var mouse = d3.mouse(this);
-         indicator.attr("x", mouse[0]);        
-         indicator.attr("y", 30); 
-  
-	 var index = Math.round(xScale.invert(mouse[0]));
-
-	 //alert("dataset1: " +dataset[index]+ ", dataset2:" + dataset2[index]);
-	 //NOTE: Alert works, Just need to show it on the bottom of the x axis
-      
-
-
-      
-      information.append("rect")
-      .attr("x", 50)
-      .attr("width", w - 50 - 50  )
-      .attr("height", 45)
-      .style("fill", "white");
-      
-      information.append("text")
-      .attr("x", 60)
-      .attr("y", 15)
-      .style("color", "black")
-      .style("font-family", "Verdana")
-      .text("dataset_1 value : " + dataset[index] + ", dataset_2 value: " +dataset2[index]);
-
-      }
-
-      
-          
-      //////////////////////////////////////////////////////////////////
-      /* To create multiple lines, do for loops, depending on how many
-      countries you have
-
-      Give each path a color ID, so that when you unbold it, you can just
-      compare colors. 
-      ex. (AFTER CLICK)
-          TO BOLD: If stroke width is 2, color it black for emphasis 
-          TO UN-BOLD: If stroke width is 5, return old color using id
-
-      TO DO: SHOW THE INFORMATION AT THE TOP OF THE GRAPH
-
-      */
-
-			  
-
-      ////////////////
+				information.append("text").attr("x", 60)// positions my text in the svg, where 60
+				.attr("y", 15)// and 50 are values I picked
+				.style("color", "black").style("font-family", "Verdana").text(function() {
+					for (var a = 0; a < data.length; a++) {
+						for (var b = 0; b < data[i].perDayData.length; b++) {
+							if (data[a].perDayData[b].date) {
+															var date = data[a].perDayData[b].date.split("/");
+															console.log(date);
+							}
 
 
 
+						}
+					}
 
-           
+				});
+			}
 
-      </script>
+			///end of update function
+			//////////////////////////////////////////////////////////////////
+			/* TO DO LIST:
+			- Create a Color Function
+			- Do Labels
 
-    </body>
+			*/
+
+			////////////////
+
+			function makeColor() {
+				var color = ["gray", "green", "yellow", "violet", "orange", "purple", "blue", "teal"];
+				var x = Math.floor(Math.random() * 8);
+
+				return color[x];
+			}
+
+			///////////////////////////////////////////////////////////////////////////////
+
+		</script>
+
+	</body>
 
 </html>
+
